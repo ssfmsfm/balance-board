@@ -1,3 +1,11 @@
-<svg width="185" height="30" viewBox="0 0 185 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 16.5H90.75H181.5M181.5 16.5L170 2M181.5 16.5L170 28" stroke="#F95F06" stroke-width="4"/>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+     width="185.000000pt" height="30.000000pt" viewBox="0 0 185.000000 30.000000"
+     preserveAspectRatio="xMidYMid meet" >
+
+    <g transform="translate(0.000000,30.000000) scale(0.100000,-0.100000)"
+       fill="#F95F06" stroke="none">
+        <path d="M1697 273 c-3 -5 15 -33 39 -63 l44 -55 -890 -3 c-782 -2 -890 -4
+-890 -17 0 -13 107 -15 887 -15 l887 0 -42 -43 c-33 -34 -40 -45 -30 -55 10
+-10 25 0 70 45 32 32 58 61 58 66 0 12 -111 147 -121 147 -4 0 -10 -3 -12 -7z"/>
+    </g>
 </svg>
