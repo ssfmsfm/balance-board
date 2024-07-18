@@ -164,6 +164,19 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-col">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+          className="ml-10 max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/34ade5495d91fa1d18f4a175374dec8ab29e7925d635df519b7c471e880646cd?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+          className="mt-6 w-full aspect-[4] max-md:max-w-full"
+        />
+      </div>
     </div>
   );
 };
