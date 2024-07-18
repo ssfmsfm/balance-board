@@ -226,6 +226,52 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-col justify-center">
+        <div className="flex overflow-hidden relative flex-col justify-center items-center px-16 py-20 w-full fill-yellow-400 min-h-[447px] max-md:px-5 max-md:max-w-full">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/81491aed540e6f3f7d3866c022a0d2627bed390aadd37238d9bf8f3d21ebfb02?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+            className="object-cover absolute inset-0 size-full"
+          />
+          <div className="relative mt-40 w-full max-w-[1717px] max-md:mt-10 max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                <div className="flex relative flex-col grow justify-center text-black max-md:mt-10 max-md:max-w-full">
+                  <div className="text-3xl font-bold tracking-wider leading-10 max-md:max-w-full">
+                    Kundenbetreuung:
+                  </div>
+                  <div className="mt-9 text-2xl tracking-wider leading-10 max-md:max-w-full">
+                    Mo-Fr von 9:00 bis 21:00 Uhr
+                    <br />
+                    E-mail: support@holzspielzeug.com
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                <div className="flex relative flex-col justify-center text-black max-md:mt-10">
+                  <div className="text-3xl font-bold tracking-wider leading-10">
+                    Standort
+                  </div>
+                  <div className="mt-11 text-2xl tracking-wider leading-10 max-md:mt-10">
+                    Prinzenstraße 33, 10244, Berlin Deutschland
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                <div className="flex relative flex-col justify-center text-black max-md:mt-10 max-md:max-w-full">
+                  <div className="text-3xl font-bold tracking-wider leading-10 max-md:max-w-full">
+                    Shop
+                  </div>
+                  <div className="mt-9 text-2xl tracking-wider leading-10 max-md:max-w-full">
+                    Registriert in Deutschland. Alle Rechte vorbehalten
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
