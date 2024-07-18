@@ -177,6 +177,26 @@ const HomePage = () => {
           className="mt-6 w-full aspect-[4] max-md:max-w-full"
         />
       </div>
+
+      <div className="flex flex-col justify-center items-start py-20 text-2xl tracking-wider leading-10 text-orange-600 max-md:pr-5">
+        <div className="flex flex-col mt-32 max-w-full w-[771px] max-md:mt-10">
+          <div className="justify-center px-12 py-9 bg-orange-100 rounded-[40px] max-md:px-5 max-md:max-w-full">
+            Alle Ecken sind abgerundet und sorgfältig{" "}
+            <span className="font-bold text-orange-600">
+              von Hand glatt geschliffen
+            </span>
+          </div>
+          <div className="justify-center items-start px-12 py-8 mt-9 bg-orange-100 rounded-[30px] max-md:px-5 max-md:max-w-full">
+            Allergische Reaktionen sind
+            <span className="font-bold text-orange-600"> nicht möglich</span>
+          </div>
+          <div className="justify-center items-start px-12 py-10 mt-9 bg-orange-100 rounded-[40px] max-md:px-5 max-md:max-w-full">
+            Wir verwenden{" "}
+            <span className="font-bold text-orange-600">nur hochwertige</span>,
+            nachhaltige wasserbasierte und umweltfreundliche Lacke
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
