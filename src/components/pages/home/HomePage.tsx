@@ -197,6 +197,35 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-col p-20 bg-orange-100 rounded-[40px] max-md:px-5">
+        <div className="mt-2.5 text-9xl uppercase text-orange-950 max-md:mr-1.5 max-md:max-w-full max-md:text-4xl">
+          Balance board{" "}
+        </div>
+        <div className="mt-7 text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">
+          Schwebebalken für IHRE KINDER
+        </div>
+        <div className="flex gap-5 mt-24 w-full max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
+          <div className="flex-auto text-8xl leading-10 text-black tracking-[4px] max-md:text-4xl">
+            89,00 €
+          </div>
+          <div className="flex gap-5 self-start font-extrabold uppercase max-md:flex-wrap">
+            <div className="justify-center items-center px-7 text-4xl whitespace-nowrap bg-white rounded-3xl h-[78px] text-orange-950 tracking-[16px] w-[78px] max-md:px-5">
+              1
+            </div>
+            <div className="grow justify-center px-16 py-8 text-2xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
+              IN DEN WARENKORB
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-5 mt-10 text-2xl tracking-widest leading-10 text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
+          <div className="shrink basis-auto grow-0">✔️ 2 Jahre Garantie</div>
+          <div className="flex-auto max-md:max-w-full">
+            ✔️ Rückgabe oder Umtausch der Bestellung innerhalb von 30 Tagen nach
+            Erhalt
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
