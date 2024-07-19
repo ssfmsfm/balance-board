@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         "4k": "2560px",
+        fullHD: "1920px",
       },
     },
   },

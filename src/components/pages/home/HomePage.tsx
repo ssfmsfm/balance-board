@@ -61,7 +61,7 @@ const HomePage = () => {
                 height={1034}
                 priority
                 className={
-                  "absolute z-20 [filter:drop-shadow(0px_4px_4px_rgba(0,_0,_0,_0.25))] 2xl:p-9 p-5"
+                  "absolute z-20 [filter:drop-shadow(0px_4px_4px_rgba(0,_0,_0,_0.25))] p-7 2xl:p-9 min-[2020px]:p-0"
                 }
               />
               <Image
