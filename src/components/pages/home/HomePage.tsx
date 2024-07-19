@@ -75,32 +75,33 @@ const HomePage = () => {
         </section>
       </header>
 
-      <div className={"pr-16"}>
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-[43%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow text-xs sm:text-2xl tracking-wider leading-10 text-orange-600 max-md:mt-10 max-md:max-w-full">
-              <div className="justify-center items-start px-16 py-20 bg-orange-100 rounded-[60px] rounded-l-none max-md:px-5 max-md:max-w-full">
-                Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
-                geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
-                <span className="font-bold text-orange-600">Korrdination</span>{" "}
-                und{" "}
-                <span className="font-bold text-orange-600">
-                  Gleichgewichtssinn
-                </span>{" "}
-                zu entwickeln.
-              </div>
-              <div className="justify-center px-16 py-20 mt-8 bg-orange-100 rounded-[60px] rounded-l-none max-md:pr-8 max-md:pl-5 max-md:max-w-full">
-                Hergestellt nach{" "}
-                <span className="font-bold text-orange-600">
-                  Montessori-Technologie
-                </span>
-                , ist der Schwebebalken sehr stark und haltbar, mit einem
-                solchen Spielzeug wird es sehr einfach sein, Ihr Baby für aktive
-                Spiele und Übungen einzustellen!
-              </div>
+      <div>
+        <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
+          <div className="flex items-center w-[90%] lg:w-[60%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 sm:px-16 sm:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none text-xs sm:text-2xl tracking-wider sm:leading-10">
+            <div>
+              Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem geraden
+              Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
+              <span className="font-bold text-orange-600">Korrdination</span>{" "}
+              und{" "}
+              <span className="font-bold text-orange-600">
+                Gleichgewichtssinn
+              </span>{" "}
+              zu entwickeln.
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-[57%] max-md:ml-0 max-md:w-full relative">
+          <div className="flex items-center order-3 w-[90%] lg:w-[60%] 2xl:w-full 2xl:row-start-2 px-8 py-10 sm:px-16 sm:py-20 bg-orange-100 rounded-[60px] rounded-l-none max-md:max-w-full text-xs sm:text-2xl tracking-wider sm:leading-10">
+            <div>
+              Hergestellt nach{" "}
+              <span className="font-bold text-orange-600">
+                Montessori-Technologie
+              </span>
+              , ist der Schwebebalken sehr stark und haltbar, mit einem solchen
+              Spielzeug wird es sehr einfach sein, Ihr Baby für aktive Spiele
+              und Übungen einzustellen!
+            </div>
+          </div>
+
+          <div className="max-2xl:justify-self-center order-2 2xl:order-4 row-span-2  w-full sm:w-[60%] 2xl:w-full max-2xl:h-[441px] relative">
             <Image src={"/photo2.png"} alt={""} fill className="rounded-3xl" />
           </div>
         </div>
@@ -166,11 +167,11 @@ const HomePage = () => {
       </div>
 
       <div className="flex flex-col">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-          className="ml-10 max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5"
-        />
+        {/*<img*/}
+        {/*  loading="lazy"*/}
+        {/*  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"*/}
+        {/*  className="ml-10 max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5"*/}
+        {/*/>*/}
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/34ade5495d91fa1d18f4a175374dec8ab29e7925d635df519b7c471e880646cd?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
@@ -198,13 +199,13 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col p-20 bg-orange-100 rounded-[40px] max-md:px-5">
+      <div className="flex flex-col p-20 bg-orange-100 rounded-[40px] max-md:px-5 mx-16">
         <div className="mt-2.5 text-9xl uppercase text-orange-950 max-md:mr-1.5 max-md:max-w-full max-md:text-4xl">
           Balance board{" "}
         </div>
-        <div className="mt-7 text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">
-          Schwebebalken für IHRE KINDER
-        </div>
+        {/*<div className="mt-7 text-base sm:text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">*/}
+        {/*  Schwebebalken für IHRE KINDER*/}
+        {/*</div>*/}
         <div className="flex gap-5 mt-24 w-full max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
           <div className="flex-auto text-8xl leading-10 text-black tracking-[4px] max-md:text-4xl">
             89,00 €
@@ -213,9 +214,9 @@ const HomePage = () => {
             <div className="justify-center items-center px-7 text-4xl whitespace-nowrap bg-white rounded-3xl h-[78px] text-orange-950 tracking-[16px] w-[78px] max-md:px-5">
               1
             </div>
-            <div className="grow justify-center px-16 py-8 text-2xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
-              IN DEN WARENKORB
-            </div>
+            {/*<div className="grow justify-center px-16 py-8 text-base sm:text-2xll text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">*/}
+            {/*  IN DEN WARENKORB*/}
+            {/*</div>*/}
           </div>
         </div>
         <div className="flex gap-5 mt-10 text-2xl tracking-widest leading-10 text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
