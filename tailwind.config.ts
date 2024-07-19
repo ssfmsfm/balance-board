@@ -8,24 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      animation: {
-        carouselSmallScreen: "carouselSmallScreen 80s linear infinite",
-        carouselLargeScreen: "carouselLargeScreen 80s linear infinite",
-      },
-      keyframes: {
-        carouselSmallScreen: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(-169px * 14))" },
-        },
-        carouselLargeScreen: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(-211px * 14))" },
-        },
+      screens: {
+        "4k": "2560px",
       },
     },
   },
