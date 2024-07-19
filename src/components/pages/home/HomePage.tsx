@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomePage = () => {
   return (
-    <div className={"flex justify-center"}>
+    <div className={"4k:flex 4k:justify-center"}>
       <div className={"flex flex-col gap-10 max-w-[2560px]"}>
         <header className="flex gap-5 flex-col md:flex-row max-md:gap-0 overflow-hidden">
           <section className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full ml-16">
@@ -51,7 +51,7 @@ const HomePage = () => {
           <section className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full items-end">
             <div
               className={
-                "relative flex items-center justify-center md:translate-x-10 md:translate-y-[-45px] w-[105%]"
+                "relative flex items-center justify-center md:translate-x-10 md:translate-y-[-45px] w-full md:w-[115%] xl:w-[105%]"
               }
             >
               <Image
