@@ -101,8 +101,15 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="max-2xl:justify-self-center order-2 2xl:order-4 row-span-2  w-full sm:w-[60%] 2xl:w-full max-2xl:h-[441px] relative">
-            <Image src={"/photo2.png"} alt={""} fill className="rounded-3xl" />
+          <div className="justify-self-auto lg:justify-self-center order-2 2xl:order-4 row-span-2 px-5">
+            <Image
+              src={"/photo2.png"}
+              alt={""}
+              sizes={"(max-width: 384px) 16rem, (max-width: 640px) 24rem"}
+              width="0"
+              height="0"
+              className="rounded-3xl w-full 2xl:w-full"
+            />
           </div>
         </div>
       </div>
