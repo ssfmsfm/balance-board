@@ -7,7 +7,7 @@ const HomePage = () => {
         <header className="flex gap-5 flex-col md:flex-row max-md:gap-0 overflow-hidden">
           <section className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full ml-16">
             <div className="flex flex-col items-start mt-12 font-extrabold text-orange-600 uppercase max-md:mt-10 max-md:max-w-full">
-              <div className="flex items-center gap-5 px-5 text-xs sm:text-3xl font-black whitespace-nowrap text-orange-950 tracking-[8.4px]">
+              <div className="flex items-center gap-5 px-5 text-xs sm:text-3xl fullHD:text-4xl font-black whitespace-nowrap text-orange-950 tracking-[8.4px]">
                 <Image
                   src="/icons/littleHeart.svg"
                   alt=""
@@ -24,7 +24,7 @@ const HomePage = () => {
                 height={163}
                 className="mt-28 max-w-full aspect-[1.02] w-[166px] max-md:mt-10"
               />
-              <div className="flex flex-col justify-end self-stretch mt-16 text-base sm:text-2xl tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
+              <div className="flex flex-col justify-end self-stretch mt-16 text-base sm:text-2xl fullHD:text-3xl tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
                 <Image
                   src="/icons/logo.svg"
                   alt=""
@@ -36,7 +36,7 @@ const HomePage = () => {
                   Schwebebalken für Kinder
                 </h2>
               </div>
-              <button className="flex gap-5 justify-center px-11 py-5 mt-24 max-w-full text-base sm:text-2xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[9.6px] w-[557px] max-md:flex-wrap max-md:px-5 max-md:mt-10">
+              <button className="flex gap-5 justify-center px-11 py-5 mt-24 max-w-full text-base sm:text-2xl fullHD:text-3xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[9.6px] w-[557px] max-md:flex-wrap max-md:px-5 max-md:mt-10">
                 <span className="flex-auto my-auto">KAUFEN</span>
                 <Image
                   src="/icons/arrowRight.svg"
