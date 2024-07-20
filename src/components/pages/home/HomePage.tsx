@@ -3,7 +3,7 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <div className={"4k:flex 4k:justify-center"}>
-      <div className={"flex flex-col gap-10 max-w-[2560px]"}>
+      <div className={"flex flex-col max-w-[2560px]"}>
         <header className="flex gap-5 flex-col md:flex-row max-md:gap-0 overflow-hidden">
           <section className="flex flex-col w-6/12 max-md:w-full px-8 xl:ml-16">
             <div className="flex flex-col items-start mt-12 font-extrabold text-orange-600 uppercase max-md:mt-10 max-md:max-w-full">
@@ -76,7 +76,7 @@ const HomePage = () => {
           </section>
         </header>
 
-        <div>
+        <div className={"mt-11"}>
           <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
             <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none min-[2561px]:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider">
               <div>
@@ -117,7 +117,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col 2xl:mt-24">
+        <div className="flex flex-col translate-y-[1rem] 2xl:translate-y-[5rem]">
           <div className="z-10 self-end">
             <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0">
               <div className="2xl:col-start-2 flex items-center justify-center w-full">
@@ -129,7 +129,7 @@ const HomePage = () => {
                   className="aspect-[0.74] w-72 fullHD:w-80"
                 />
               </div>
-              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-center justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-8">
+              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-center justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
                 <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-8  max-md:max-w-full">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
@@ -172,17 +172,19 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col">
-          {/*<img*/}
-          {/*  loading="lazy"*/}
-          {/*  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"*/}
-          {/*  className="ml-10 max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5"*/}
-          {/*/>*/}
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/34ade5495d91fa1d18f4a175374dec8ab29e7925d635df519b7c471e880646cd?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-            className="mt-6 w-full aspect-[4] max-md:max-w-full"
-          />
+        <div className="flex flex-col translate-y-[-2rem] sm:translate-y-[-5rem]">
+          <div className="flex flex-col">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+              className="ml-[26px] max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5 max-md:w-[197px] max-sm:w-[137px]"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/34ade5495d91fa1d18f4a175374dec8ab29e7925d635df519b7c471e880646cd?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+              className="-mt-1 w-full aspect-[4] max-md:mt-0 max-md:max-w-full max-sm:mt-0.5"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col justify-center items-start py-20 text-2xl tracking-wider leading-10 text-orange-600 max-md:pr-5">
