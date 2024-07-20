@@ -24,7 +24,7 @@ const HomePage = () => {
                 height="0"
                 className="mt-10 xl:mt-28 max-w-full aspect-[1.02] w-16 sm:w-32 xl:w-40"
               />
-              <div className="flex flex-col justify-end self-stretch mt-16 text-base xl:text-2xl fullHD:text-3xl tracking-[6px] xl:tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
+              <div className="flex flex-col justify-end self-stretch mt-16 text-base xl:text-2xl fullHD:text-4xl tracking-[6px] xl:tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
                 <Image
                   src="/icons/logo.svg"
                   alt=""
@@ -35,7 +35,7 @@ const HomePage = () => {
                 <h2 className="mt-7">Schwebebalken für Kinder</h2>
               </div>
               <div className={"flex max-md:justify-center w-full"}>
-                <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 mt-10 xl:mt-24 max-w-full text-base xl:text-2xl fullHD:text-3xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
+                <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 mt-10 xl:mt-24 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
                   <span className="flex-auto my-auto">KAUFEN</span>
                   <Image
                     src="/icons/arrowRight.svg"
@@ -78,7 +78,7 @@ const HomePage = () => {
 
         <div>
           <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
-            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 sm:px-16 sm:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none 4k:rounded-[60px] text-xs sm:text-2xl tracking-wider sm:leading-10">
+            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none 4k:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
               <div>
                 Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
                 geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
@@ -90,7 +90,7 @@ const HomePage = () => {
                 zu entwickeln.
               </div>
             </div>
-            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 sm:px-16 sm:py-20 bg-orange-100 rounded-[60px] rounded-l-none 4k:rounded-[60px] max-md:max-w-full text-xs sm:text-2xl tracking-wider sm:leading-10">
+            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none 4k:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
               <div>
                 Hergestellt nach{" "}
                 <span className="font-bold text-orange-600">
@@ -102,14 +102,16 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-5">
+            <div className="self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-5 w-full max-2xl:max-w-screen-md">
               <Image
                 src={"/photo2.png"}
                 alt={""}
-                sizes={"(max-width: 384px) 16rem, (max-width: 640px) 24rem"}
+                sizes={
+                  "100% ,(min-width: 1024px) 60%, (min-width: 1536px) 100%"
+                }
                 width="0"
                 height="0"
-                className="rounded-3xl w-full lg:w-[60%] 2xl:w-full"
+                className="rounded-3xl w-full"
               />
             </div>
           </div>
