@@ -78,7 +78,7 @@ const HomePage = () => {
 
         <div>
           <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
-            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none 4k:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
+            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none min-[2561px]:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
               <div>
                 Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
                 geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
@@ -90,7 +90,7 @@ const HomePage = () => {
                 zu entwickeln.
               </div>
             </div>
-            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none 4k:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
+            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
               <div>
                 Hergestellt nach{" "}
                 <span className="font-bold text-orange-600">
