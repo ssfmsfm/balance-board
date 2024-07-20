@@ -78,7 +78,7 @@ const HomePage = () => {
 
         <div>
           <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
-            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none min-[2561px]:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
+            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none min-[2561px]:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider">
               <div>
                 Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
                 geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
@@ -90,7 +90,7 @@ const HomePage = () => {
                 zu entwickeln.
               </div>
             </div>
-            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider sm:leading-10">
+            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
               <div>
                 Hergestellt nach{" "}
                 <span className="font-bold text-orange-600">
@@ -117,30 +117,37 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col">
-          <div className="z-10 self-end max-w-full w-[1107px]">
-            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-              <div className="flex flex-col w-[42%] max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col lg:mt-24">
+          <div className="z-10 self-end">
+            <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0">
+              <div className="2xl:col-start-2 flex items-center justify-center w-full">
                 <Image
                   src={"/icons/handiwork.svg"}
                   alt={"Handgemach mit ECO-Materialien Icon"}
-                  className="w-full aspect-[0.74] max-md:mt-10 max-md:max-w-full"
-                  width={290}
-                  height={260}
+                  width="0"
+                  height="0"
+                  className="aspect-[0.74] w-72 h-64"
                 />
               </div>
-              <div className="flex flex-col ml-5 w-[58%] max-md:ml-0 max-md:w-full">
-                <div className="justify-center py-9 pr-28 pl-20 w-full text-2xl tracking-wider leading-10 text-orange-600 bg-orange-100 rounded-[60px] max-md:px-8 max-md:mt-10 max-md:max-w-full">
+              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-center justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-8">
+                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none max-md:px-8  max-md:max-w-full">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
                     Birkensperrholz
                   </span>
                   .{" "}
                 </div>
+                <div className="justify-center self-end px-14 py-9 max-w-full bg-orange-100 rounded-[60px] rounded-r-none w-[592px] max-md:px-5 max-md:max-w-full">
+                  <span className="font-bold text-orange-600">
+                    Maximale Belastung
+                  </span>{" "}
+                  für die Verwendung beträgt jedoch{" "}
+                  <span className="font-bold text-orange-600">60 kg</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="px-5 w-full max-md:max-w-full">
+          <div className="px-5 w-full max-md:max-w-full 2xl:translate-y-[-65px]">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                 <img
@@ -157,20 +164,11 @@ const HomePage = () => {
                 />
               </div>
               <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow text-2xl tracking-wider leading-10 text-black max-md:mt-10 max-md:max-w-full">
-                  <div className="justify-center self-end px-14 py-9 max-w-full bg-orange-100 rounded-[60px] w-[592px] max-md:px-5 max-md:max-w-full">
-                    <span className="font-bold text-orange-600">
-                      Maximale Belastung
-                    </span>{" "}
-                    für die Verwendung beträgt jedoch{" "}
-                    <span className="font-bold text-orange-600">60 kg</span>
-                  </div>
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-                    className="mt-80 max-w-full aspect-[0.74] w-[569px] max-md:mt-10"
-                  />
-                </div>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+                  className="mt-80 max-w-full aspect-[0.74] w-[569px] max-md:mt-10"
+                />
               </div>
             </div>
           </div>
