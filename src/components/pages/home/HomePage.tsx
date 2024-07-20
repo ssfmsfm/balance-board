@@ -5,7 +5,7 @@ const HomePage = () => {
     <div className={"4k:flex 4k:justify-center"}>
       <div className={"flex flex-col max-w-[2560px]"}>
         <header className="flex gap-5 flex-col md:flex-row max-md:gap-0 overflow-hidden">
-          <section className="flex flex-col w-6/12 max-md:w-full px-8 xl:ml-16">
+          <section className="flex flex-col w-6/12 max-md:w-full max-xl:px-8 xl:ml-16">
             <div className="flex flex-col items-start mt-12 font-extrabold text-orange-600 uppercase max-md:mt-10 max-md:max-w-full">
               <div className="flex items-center gap-3 lg:gap-5 text-base ld:text-2xl xl:text-3xl fullHD:text-4xl font-black whitespace-nowrap text-orange-950 tracking-[4px] xl:tracking-[8.4px]">
                 <Image
@@ -106,7 +106,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-5 w-full max-2xl:max-w-screen-md">
+            <div className="self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-8 w-full max-2xl:max-w-screen-md">
               <Image
                 src={"/photo2.png"}
                 alt={""}
@@ -133,7 +133,7 @@ const HomePage = () => {
                   className="aspect-[0.74] w-72 fullHD:w-80"
                 />
               </div>
-              <div className="col-start-2 col-end-5 md:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
+              <div className="col-start-2 col-end-4 md:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
                 <div className="justify-center self-end px-14 py-9 bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-5 max-md:max-w-full max-w-[470px] fullHD:max-w-[650px]">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
@@ -151,8 +151,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="px-5 w-full max-md:max-w-full 2xl:translate-y-[-65px]">
-            <div className="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(2,_0.5fr)] gap-2 md:gap-6 xl:gap-11">
+          <div className="px-8 xl:px-16 w-full max-md:max-w-full 2xl:translate-y-[-65px]">
+            <div className="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(2,_0.5fr)] gap-2 md:gap-10 xl:gap-11">
               <div className="[grid-area:1_/_1_/_2_/_2]">
                 <img
                   loading="lazy"
