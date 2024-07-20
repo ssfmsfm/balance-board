@@ -124,7 +124,7 @@ const HomePage = () => {
         <div className="flex flex-col translate-y-[1rem] 2xl:translate-y-[5rem]">
           <div className="z-10 self-end w-full">
             <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0 w-full">
-              <div className="2xl:col-start-2 flex items-center justify-center w-full">
+              <div className="md:col-start-2 flex items-center justify-center w-full">
                 <Image
                   src={"/icons/handiwork.svg"}
                   alt={"Handgemach mit ECO-Materialien Icon"}
@@ -133,15 +133,15 @@ const HomePage = () => {
                   className="aspect-[0.74] w-72 fullHD:w-80"
                 />
               </div>
-              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
-                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-8  max-md:max-w-full max-w-[470px]">
+              <div className="col-start-2 col-end-5 md:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
+                <div className="justify-center self-end px-14 py-9 bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-5 max-md:max-w-full max-w-[470px] fullHD:max-w-[650px]">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
                     Birkensperrholz
                   </span>
                   .{" "}
                 </div>
-                <div className="justify-center self-end px-14 py-9 bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-5 max-md:max-w-full max-w-[470px]">
+                <div className="justify-center self-end px-14 py-9 bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-5 max-md:max-w-full max-w-[470px] fullHD:max-w-[650px]">
                   <span className="font-bold text-orange-600">
                     Maximale Belastung
                   </span>{" "}
@@ -152,7 +152,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="px-5 w-full max-md:max-w-full 2xl:translate-y-[-65px]">
-            <div className="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(2,_0.5fr)] gap-1 md:gap-6 xl:gap-11">
+            <div className="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(2,_0.5fr)] gap-2 md:gap-6 xl:gap-11">
               <div className="[grid-area:1_/_1_/_2_/_2]">
                 <img
                   loading="lazy"
