@@ -176,7 +176,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col translate-y-[-35%] ml-8 xl:ml-16 pr-1 lg:pr-[15%]">
+        <div className="flex flex-col translate-y-[-25%] ml-8 xl:ml-16 pr-1 lg:pr-[15%]">
           <div className="flex flex-col">
             <img
               loading="lazy"
@@ -193,30 +193,25 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex justify-between py-20 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:pr-5 overflow-hidden">
-          <div className="flex flex-col justify-center max-w-full w-[771px] ml-8 xl:ml-20">
-            <div className="justify-center px-12 py-9 bg-orange-100 rounded-[40px] max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between text-base xl:text-2xl fullHD:text-4xl tracking-wider overflow-hidden">
+          <div className="flex flex-col justify-center max-w-full w-[771px] max-xl:px-8 xl:ml-20 gap-4 xl:gap-8">
+            <div className="justify-center px-6 py-4 lg:px-12 lg:py-9 bg-orange-100 rounded-[40px]">
               Alle Ecken sind abgerundet und sorgfältig{" "}
               <span className="font-bold text-orange-600">
                 von Hand glatt geschliffen
               </span>
             </div>
-            <div className="justify-center items-start px-12 py-8 mt-9 bg-orange-100 rounded-[30px] max-md:px-5 max-md:max-w-full">
+            <div className="justify-center items-start px-6 py-4 lg:px-12 lg:py-8 bg-orange-100 rounded-[30px] lg:w-[110%]">
               Allergische Reaktionen sind
               <span className="font-bold text-orange-600"> nicht möglich</span>
             </div>
-            <div className="justify-center items-start px-12 py-10 mt-9 bg-orange-100 rounded-[40px] max-md:px-5 max-md:max-w-full">
+            <div className="justify-center items-start px-6 py-5 lg:px-12 lg:py-10 bg-orange-100 rounded-[40px] lg:w-[120%]">
               Wir verwenden{" "}
               <span className="font-bold text-orange-600">nur hochwertige</span>
               , nachhaltige wasserbasierte und umweltfreundliche Lacke
             </div>
           </div>
-          <div>
-            <div
-              className={
-                "bg-[url(/balanceBoard.png)_lightgray_-0.292px_0px_/_100.052%_100.3%_no-repeat] mix-blend-multiply"
-              }
-            ></div>
+          <div className={"flex justify-center"}>
             <Image
               src={"/balanceBoard.png"}
               alt={""}
