@@ -176,17 +176,19 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col translate-y-[-2rem] sm:translate-y-[-5rem] ml-8 xl:ml-20">
+        <div className="flex flex-col translate-y-[-35%] ml-8 xl:ml-16 pr-1 lg:pr-[15%]">
           <div className="flex flex-col">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-              className="ml-[26px] max-w-full aspect-[3.23] fill-sky-700 w-[407px] max-md:ml-2.5 max-md:w-[197px] max-sm:w-[137px]"
+              className="w-[20%] ml-[1%] mb-[5%]"
             />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/34ade5495d91fa1d18f4a175374dec8ab29e7925d635df519b7c471e880646cd?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-              className="-mt-1 w-full aspect-[4] max-md:mt-0 max-md:max-w-full max-sm:mt-0.5"
+            <Image
+              src={"/safeForChildren.svg"}
+              alt={"ABSOLUT SICHERFÜR KINDER"}
+              width={1546}
+              height={373}
+              className="-mt-1 w-full aspect-[4] max-md:max-w-full"
             />
           </div>
         </div>
