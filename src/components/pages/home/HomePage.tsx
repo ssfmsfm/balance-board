@@ -117,7 +117,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:mt-24">
+        <div className="flex flex-col 2xl:mt-24">
           <div className="z-10 self-end">
             <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0">
               <div className="2xl:col-start-2 flex items-center justify-center w-full">
@@ -126,18 +126,18 @@ const HomePage = () => {
                   alt={"Handgemach mit ECO-Materialien Icon"}
                   width="0"
                   height="0"
-                  className="aspect-[0.74] w-72 h-64"
+                  className="aspect-[0.74] w-72 fullHD:w-80"
                 />
               </div>
               <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-center justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-8">
-                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none max-md:px-8  max-md:max-w-full">
+                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-8  max-md:max-w-full">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
                     Birkensperrholz
                   </span>
                   .{" "}
                 </div>
-                <div className="justify-center self-end px-14 py-9 max-w-full bg-orange-100 rounded-[60px] rounded-r-none w-[592px] max-md:px-5 max-md:max-w-full">
+                <div className="justify-center self-end px-14 py-9 max-w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] w-[592px] max-md:px-5 max-md:max-w-full">
                   <span className="font-bold text-orange-600">
                     Maximale Belastung
                   </span>{" "}
