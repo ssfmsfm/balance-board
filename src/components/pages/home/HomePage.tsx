@@ -77,28 +77,32 @@ const HomePage = () => {
         </header>
 
         <div className={"mt-11"}>
-          <div className="grid auto-rows-auto 2xl:grid-cols-2 2xl:grid-rows-2 gap-5 2xl:pr-16">
-            <div className="flex items-center w-[90%] 2xl:w-full max-2xl:justify-self-end order-1 2xl:row-start-1 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] max-2xl:rounded-r-none 2xl:rounded-l-none min-[2561px]:rounded-[60px] text-base xl:text-2xl fullHD:text-4xl tracking-wider">
-              <div>
-                Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
-                geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
-                <span className="font-bold text-orange-600">Korrdination</span>{" "}
-                und{" "}
-                <span className="font-bold text-orange-600">
-                  Gleichgewichtssinn
-                </span>{" "}
-                zu entwickeln.
+          <div className="flex  max-2xl:flex-col gap-5 2xl:pr-16">
+            <div className={"flex justify-center flex-col gap-5"}>
+              <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
+                <div>
+                  Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
+                  geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
+                  <span className="font-bold text-orange-600">
+                    Korrdination
+                  </span>{" "}
+                  und{" "}
+                  <span className="font-bold text-orange-600">
+                    Gleichgewichtssinn
+                  </span>{" "}
+                  zu entwickeln.
+                </div>
               </div>
-            </div>
-            <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
-              <div>
-                Hergestellt nach{" "}
-                <span className="font-bold text-orange-600">
-                  Montessori-Technologie
-                </span>
-                , ist der Schwebebalken sehr stark und haltbar, mit einem
-                solchen Spielzeug wird es sehr einfach sein, Ihr Baby für aktive
-                Spiele und Übungen einzustellen!
+              <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
+                <div>
+                  Hergestellt nach{" "}
+                  <span className="font-bold text-orange-600">
+                    Montessori-Technologie
+                  </span>
+                  , ist der Schwebebalken sehr stark und haltbar, mit einem
+                  solchen Spielzeug wird es sehr einfach sein, Ihr Baby für
+                  aktive Spiele und Übungen einzustellen!
+                </div>
               </div>
             </div>
 
@@ -118,8 +122,8 @@ const HomePage = () => {
         </div>
 
         <div className="flex flex-col translate-y-[1rem] 2xl:translate-y-[5rem]">
-          <div className="z-10 self-end">
-            <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0">
+          <div className="z-10 self-end w-full">
+            <div className="grid grid-cols-3 gap-5 max-md:flex-col max-md:gap-0 w-full">
               <div className="2xl:col-start-2 flex items-center justify-center w-full">
                 <Image
                   src={"/icons/handiwork.svg"}
@@ -129,15 +133,15 @@ const HomePage = () => {
                   className="aspect-[0.74] w-72 fullHD:w-80"
                 />
               </div>
-              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-center justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
-                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-8  max-md:max-w-full">
+              <div className="col-start-2 col-end-5 2xl:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
+                <div className="justify-center py-9 pr-28 pl-20 w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-8  max-md:max-w-full max-w-[470px]">
                   Hergestellt aus hochwertigem polierten{" "}
                   <span className="font-bold text-orange-600">
                     Birkensperrholz
                   </span>
                   .{" "}
                 </div>
-                <div className="justify-center self-end px-14 py-9 max-w-full bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] w-[592px] max-md:px-5 max-md:max-w-full">
+                <div className="justify-center self-end px-14 py-9 bg-orange-100 rounded-[60px] rounded-r-none min-[2561px]:rounded-[60px] max-md:px-5 max-md:max-w-full max-w-[470px]">
                   <span className="font-bold text-orange-600">
                     Maximale Belastung
                   </span>{" "}
@@ -222,12 +226,12 @@ const HomePage = () => {
         </div>
 
         <div className="flex flex-col p-20 bg-orange-100 rounded-[40px] max-md:px-5 mx-16">
-          <div className="mt-2.5 text-9xl uppercase text-orange-950 max-md:mr-1.5 max-md:max-w-full max-md:text-4xl">
-            Balance board{" "}
-          </div>
-          <div className="mt-7 text-base sm:text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">
-            Schwebebalken für IHRE KINDER
-          </div>
+          {/*<div className="mt-2.5 text-9xl uppercase text-orange-950 max-md:mr-1.5 max-md:max-w-full max-md:text-4xl">*/}
+          {/*  Balance board{" "}*/}
+          {/*</div>*/}
+          {/*<div className="mt-7 text-base sm:text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">*/}
+          {/*  Schwebebalken für IHRE KINDER*/}
+          {/*</div>*/}
           <div className="flex gap-5 mt-24 w-full max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
             <div className="flex-auto text-8xl leading-10 text-black tracking-[4px] max-md:text-4xl">
               89,00 €
@@ -236,9 +240,9 @@ const HomePage = () => {
               <div className="justify-center items-center px-7 text-4xl whitespace-nowrap bg-white rounded-3xl h-[78px] text-orange-950 tracking-[16px] w-[78px] max-md:px-5">
                 1
               </div>
-              <div className="grow justify-center px-16 py-8 text-base sm:text-2xll text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
-                IN DEN WARENKORB
-              </div>
+              {/*<div className="grow justify-center px-16 py-8 text-base sm:text-2xll text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">*/}
+              {/*  IN DEN WARENKORB*/}
+              {/*</div>*/}
             </div>
           </div>
           <div className="flex gap-5 mt-10 text-2xl tracking-widest leading-10 text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
