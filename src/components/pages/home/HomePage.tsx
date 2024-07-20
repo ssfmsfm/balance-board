@@ -172,7 +172,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col translate-y-[-2rem] sm:translate-y-[-5rem]">
+        <div className="flex flex-col translate-y-[-2rem] sm:translate-y-[-5rem] ml-8 xl:ml-20">
           <div className="flex flex-col">
             <img
               loading="lazy"
@@ -187,8 +187,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-start py-20 text-2xl tracking-wider leading-10 text-orange-600 max-md:pr-5">
-          <div className="flex flex-col mt-32 max-w-full w-[771px] max-md:mt-10">
+        <div className="flex justify-between py-20 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:pr-5 overflow-hidden">
+          <div className="flex flex-col justify-center max-w-full w-[771px] ml-8 xl:ml-20">
             <div className="justify-center px-12 py-9 bg-orange-100 rounded-[40px] max-md:px-5 max-md:max-w-full">
               Alle Ecken sind abgerundet und sorgfältig{" "}
               <span className="font-bold text-orange-600">
@@ -205,15 +205,29 @@ const HomePage = () => {
               , nachhaltige wasserbasierte und umweltfreundliche Lacke
             </div>
           </div>
+          <div>
+            <div
+              className={
+                "bg-[url(/balanceBoard.png)_lightgray_-0.292px_0px_/_100.052%_100.3%_no-repeat] mix-blend-multiply"
+              }
+            ></div>
+            <Image
+              src={"/balanceBoard.png"}
+              alt={""}
+              width={1054}
+              height={761}
+              className={"mix-blend-multiply -rotate-[6.142deg]"}
+            />
+          </div>
         </div>
 
         <div className="flex flex-col p-20 bg-orange-100 rounded-[40px] max-md:px-5 mx-16">
           <div className="mt-2.5 text-9xl uppercase text-orange-950 max-md:mr-1.5 max-md:max-w-full max-md:text-4xl">
             Balance board{" "}
           </div>
-          {/*<div className="mt-7 text-base sm:text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">*/}
-          {/*  Schwebebalken für IHRE KINDER*/}
-          {/*</div>*/}
+          <div className="mt-7 text-base sm:text-2xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">
+            Schwebebalken für IHRE KINDER
+          </div>
           <div className="flex gap-5 mt-24 w-full max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
             <div className="flex-auto text-8xl leading-10 text-black tracking-[4px] max-md:text-4xl">
               89,00 €
@@ -222,9 +236,9 @@ const HomePage = () => {
               <div className="justify-center items-center px-7 text-4xl whitespace-nowrap bg-white rounded-3xl h-[78px] text-orange-950 tracking-[16px] w-[78px] max-md:px-5">
                 1
               </div>
-              {/*<div className="grow justify-center px-16 py-8 text-base sm:text-2xll text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">*/}
-              {/*  IN DEN WARENKORB*/}
-              {/*</div>*/}
+              <div className="grow justify-center px-16 py-8 text-base sm:text-2xll text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
+                IN DEN WARENKORB
+              </div>
             </div>
           </div>
           <div className="flex gap-5 mt-10 text-2xl tracking-widest leading-10 text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
@@ -237,20 +251,20 @@ const HomePage = () => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <div className="flex overflow-hidden relative flex-col justify-center items-center px-16 py-20 w-full fill-yellow-400 min-h-[447px] max-md:px-5 max-md:max-w-full">
+          <div className="flex overflow-hidden relative flex-col justify-center items-center px-8 lg:px-16 py-10 lg:py-20 w-full fill-yellow-400 max-md:max-w-full">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/81491aed540e6f3f7d3866c022a0d2627bed390aadd37238d9bf8f3d21ebfb02?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
               className="max-2xl:object-cover absolute inset-0 size-full"
             />
-            <div className="relative mt-40 w-full max-w-[1717px] max-md:mt-10 max-md:max-w-full">
+            <div className="relative mt-40 w-full max-w-[2017px] max-md:mt-10 max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex relative flex-col grow justify-center text-black max-md:mt-10 max-md:max-w-full">
-                    <div className="text-3xl font-bold tracking-wider leading-10 max-md:max-w-full">
+                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10 max-md:max-w-full">
                       Kundenbetreuung:
                     </div>
-                    <div className="mt-9 text-2xl tracking-wider leading-10 max-md:max-w-full">
+                    <div className="mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
                       Mo-Fr von 9:00 bis 21:00 Uhr
                       <br />
                       E-mail: support@holzspielzeug.com
@@ -259,20 +273,20 @@ const HomePage = () => {
                 </div>
                 <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex relative flex-col justify-center text-black max-md:mt-10">
-                    <div className="text-3xl font-bold tracking-wider leading-10">
+                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10">
                       Standort
                     </div>
-                    <div className="mt-11 text-2xl tracking-wider leading-10 max-md:mt-10">
+                    <div className="mt-11 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:mt-10">
                       Prinzenstraße 33, 10244, Berlin Deutschland
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex relative flex-col justify-center text-black max-md:mt-10 max-md:max-w-full">
-                    <div className="text-3xl font-bold tracking-wider leading-10 max-md:max-w-full">
+                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10 max-md:max-w-full">
                       Shop
                     </div>
-                    <div className="mt-9 text-2xl tracking-wider leading-10 max-md:max-w-full">
+                    <div className="mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
                       Registriert in Deutschland. Alle Rechte vorbehalten
                     </div>
                   </div>
