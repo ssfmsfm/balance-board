@@ -12,6 +12,9 @@ const config: Config = {
         "4k": "2560px",
         fullHD: "1920px",
       },
+      fontFamily: {
+        allenoire: ["var(--font-allenoire)"],
+      },
     },
   },
   plugins: [],
