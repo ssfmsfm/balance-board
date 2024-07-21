@@ -239,8 +239,8 @@ const HomePage = () => {
             <div className="whitespace-nowrap font-allenoire flex-auto text-5xl xl:text-8xl fullHD:text-9xl leading-10 text-black tracking-[4px]">
               89,00 €
             </div>
-            <div className="flex gap-4 lg:gap-9 font-extrabold uppercase max-[340px]:flex-wrap">
-              <div className="flex items-center px-4 xl:px-8 text-2xl sm:text-3xl xl:text-4xl fullHD:text-4xl bg-white rounded-[25%] text-orange-950">
+            <div className="flex items-center gap-4 lg:gap-9 font-extrabold uppercase max-[340px]:flex-wrap">
+              <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950">
                 1
               </div>
               <button className="grow justify-center px-8 xl:px-16 py-4 xl:py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
@@ -248,7 +248,7 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <div className="flex gap-2 lg:gap-5 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest leading-10 text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
+          <div className="flex gap-2 lg:gap-5 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
             <div className="shrink basis-auto grow-0">✔️ 2 Jahre Garantie</div>
             <div className="flex-auto max-md:max-w-full">
               ✔️ Rückgabe oder Umtausch der Bestellung innerhalb von 30 Tagen
