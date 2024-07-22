@@ -84,8 +84,8 @@ const HomePage = () => {
 
         <div className={"mt-11"}>
           <div className="flex  max-2xl:flex-col gap-5 2xl:pr-16">
-            <div className={"flex justify-center flex-col gap-5"}>
-              <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
+            <div className={"flex flex-[1] justify-center flex-col gap-5"}>
+              <div className="flex flex-[1] items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
                 <div>
                   Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
                   geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
@@ -99,7 +99,7 @@ const HomePage = () => {
                   zu entwickeln.
                 </div>
               </div>
-              <div className="flex items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
+              <div className="flex flex-[1] items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
                 <div>
                   Hergestellt nach{" "}
                   <span className="font-bold text-orange-600">
@@ -112,7 +112,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-8 w-full max-2xl:max-w-screen-md">
+            <div className="flex-[1] self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-8 w-full max-2xl:max-w-screen-md">
               <Image
                 src={"/photo2.png"}
                 alt={""}
@@ -199,7 +199,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between text-base xl:text-2xl fullHD:text-4xl tracking-wider overflow-hidden">
+        <div className="flex flex-col justify-around lg:flex-row items-center justify-between text-base xl:text-2xl fullHD:text-4xl tracking-wider overflow-hidden">
           <div className="flex flex-col justify-center max-w-full w-[771px] max-xl:px-8 xl:ml-20 gap-4 xl:gap-8">
             <div className="justify-center px-6 py-4 lg:px-12 lg:py-9 bg-orange-100 rounded-[40px]">
               Alle Ecken sind abgerundet und sorgfältig{" "}
@@ -221,7 +221,7 @@ const HomePage = () => {
             <Image
               src={"/balanceBoard.png"}
               alt={""}
-              width={1054}
+              width={1354}
               height={761}
               className={"mix-blend-multiply -rotate-[6.142deg]"}
             />
