@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const myFont = localFont({
   src: "../../../fonts/allenoire.woff2",
@@ -41,16 +42,18 @@ const HomePage = () => {
                 <h2 className="mt-7">Schwebebalken für Kinder</h2>
               </div>
               <div className={"flex max-md:justify-center w-full"}>
-                <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 mt-10 xl:mt-24 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
-                  <span className="flex-auto my-auto">KAUFEN</span>
-                  <Image
-                    src="/icons/arrowRight.svg"
-                    alt=""
-                    width="0"
-                    height="0"
-                    className="shrink-0 max-w-full  aspect-[6.67] stroke-[4px] stroke-orange-600  w-28 lg:w-44"
-                  />
-                </button>
+                <Link href={"/sold-out"}>
+                  <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 mt-10 xl:mt-24 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
+                    <span className="flex-auto my-auto">KAUFEN</span>
+                    <Image
+                      src="/icons/arrowRight.svg"
+                      alt=""
+                      width="0"
+                      height="0"
+                      className="shrink-0 max-w-full  aspect-[6.67] stroke-[4px] stroke-orange-600  w-28 lg:w-44"
+                    />
+                  </button>
+                </Link>
               </div>
             </div>
           </section>
@@ -240,12 +243,14 @@ const HomePage = () => {
               89,00 €
             </div>
             <div className="flex items-center gap-4 lg:gap-9 font-extrabold uppercase max-[340px]:flex-wrap">
-              <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950">
+              <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950 flex-shrink-0">
                 1
               </div>
-              <button className="grow justify-center px-8 xl:px-16 py-4 xl:py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
-                IN DEN WARENKORB
-              </button>
+              <Link href={"/sold-out"}>
+                <button className="grow justify-center px-8 xl:px-16 py-4 xl:py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
+                  IN DEN WARENKORB
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex gap-2 lg:gap-5 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
