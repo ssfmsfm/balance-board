@@ -7,9 +7,9 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FEEL THE RAVE",
+  title: "BALANCE BOARD",
   description:
-    "FEEL THE RAVE is an exclusive open-air rave event featuring the best in Techno, Trance, and House music. Tickets are available for 20€ through a secret link. Be sure to grab yours before they sell out!",
+    "Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem geraden Balancer von Woodandhearts! Es wird Ihrem Kind helfen, Korrdination und Gleichgewichtssinn zu entwickeln.",
 };
 
 export default function RootLayout({
