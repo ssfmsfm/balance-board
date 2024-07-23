@@ -27,7 +27,7 @@ const SoldOut = () => {
               "flex gap-5 justify-center items-center font-extrabold text-orange-600 uppercase px-11 max-md:px-5 py-5 mt-3 xl:mt-5 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap"
             }
           >
-            GO BACK
+            ZURÜCK
           </button>
         </Link>
       </div>

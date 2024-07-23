@@ -20,7 +20,9 @@ const HomePage = () => {
                   alt=""
                   width="0"
                   height="0"
+                  priority
                   className="shrink-0 aspect-[1.16] fill-orange-950 w-5 lg:w-7"
+                  sizes="(min-width: 1024px) 28px, 20px"
                 />
                 <h1 className="flex-auto">Woodandhearts</h1>
               </div>
@@ -29,15 +31,19 @@ const HomePage = () => {
                 alt=""
                 width="0"
                 height="0"
+                priority
                 className="mt-10 xl:mt-28 max-w-full aspect-[1.02] w-16 sm:w-32 xl:w-40"
+                sizes="(min-width: 1280px) 160px, (min-width: 640px) 128px, 64px"
               />
               <div className="flex flex-col justify-end self-stretch mt-16 text-base xl:text-2xl fullHD:text-4xl tracking-[6px] xl:tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
                 <Image
                   src="/icons/logo.svg"
-                  alt=""
+                  alt="Balance board Logo"
                   width={557}
                   height={206}
+                  priority
                   className="w-full aspect-[2.7] fill-orange-950 max-md:max-w-full"
+                  sizes="(max-width: 768px) 100vw, 557px"
                 />
                 <h2 className="mt-7">Schwebebalken für Kinder</h2>
               </div>
@@ -50,7 +56,9 @@ const HomePage = () => {
                       alt=""
                       width="0"
                       height="0"
+                      priority
                       className="shrink-0 max-w-full  aspect-[6.67] stroke-[4px] stroke-orange-600  w-28 lg:w-44"
+                      sizes="(min-width: 1024px) 176px, 112px"
                     />
                   </button>
                 </Link>
@@ -65,13 +73,14 @@ const HomePage = () => {
             >
               <Image
                 src="/photo6.png"
-                alt=""
+                alt="Der Junge sitzt auf dem Balance board"
                 width={931}
                 height={1034}
                 priority
                 className={
                   "absolute z-20 [filter:drop-shadow(0px_4px_4px_rgba(0,_0,_0,_0.25))] p-7 2xl:p-9 min-[2020px]:p-0"
                 }
+                sizes="(min-width: 2020px) 931px, (min-width: 1536px) calc(100vw - 2rem), (min-width: 0px) calc(100vw - 3.5rem)"
               />
               <Image
                 src="/photo5.svg"
@@ -80,6 +89,7 @@ const HomePage = () => {
                 height={1250}
                 priority
                 className={"z-10"}
+                sizes="100vw"
               />
             </div>
           </section>
@@ -118,13 +128,11 @@ const HomePage = () => {
             <div className="flex-[1] self-center justify-self-center 2xl:justify-self-auto order-2 2xl:order-4 row-span-2 px-8 w-full max-2xl:max-w-screen-md">
               <Image
                 src={"/photo2.png"}
-                alt={""}
-                sizes={
-                  "100% ,(min-width: 1024px) 60%, (min-width: 1536px) 100%"
-                }
+                alt={"Der Junge geht zum Balance board"}
                 width="0"
                 height="0"
                 className="rounded-3xl w-full"
+                sizes="(max-width: 1536px) 100vw, (min-width: 1536px) 100vw"
               />
             </div>
           </div>
@@ -140,6 +148,7 @@ const HomePage = () => {
                   width="0"
                   height="0"
                   className="aspect-[0.74] w-72 fullHD:w-80"
+                  sizes="(min-width: 1920px) 320px, (min-width: 768px) 288px, 288px"
                 />
               </div>
               <div className="col-start-2 col-end-4 md:col-start-3 flex flex-col items-end justify-center w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider gap-4 xl:gap-8">
@@ -163,22 +172,39 @@ const HomePage = () => {
           <div className="px-8 xl:px-16 w-full max-md:max-w-full 2xl:translate-y-[-65px]">
             <div className="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(2,_0.5fr)] gap-2 md:gap-10 xl:gap-11">
               <div className="[grid-area:1_/_1_/_2_/_2]">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1064f5fb31d07dd0ca272ec709e8d45e46302bb39e48c328b2ef8a5ab8f0ca85?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
-                  className="aspect-[0.74]"
+                <Image
+                  src={"/photo1.png"}
+                  alt={
+                    "Kind krabbelt auf dem Balance Board und trainiert seine Koordination."
+                  }
+                  width={568}
+                  height={766}
+                  className="fullHD:w-full"
+                  sizes="(min-width: 1920px) 100vw, 568px"
                 />
               </div>
               <div className="self-center [grid-area:1_/_2_/_3_/_3]">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a7baf5e325abd42ba458ff4f24028820f6d5002542c78a18e3f5603d34549ec?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+                <Image
+                  src={"/photo7.png"}
+                  alt={
+                    "Kind hockt auf dem Balance Board und balanciert mit den Händen."
+                  }
+                  width={568}
+                  height={766}
+                  className="fullHD:w-full"
+                  sizes="(min-width: 1920px) 100vw, 568px"
                 />
               </div>
               <div className="self-end [grid-area:1_/_3_/_3_/_4]">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5400e2e813966cf12ba2da6693bbe9130cf7017f17a912f6d491beb06d3f302f?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+                <Image
+                  src={"/photo3.png"}
+                  alt={
+                    "Kind geht über das Balance Board und verbessert sein Gleichgewicht."
+                  }
+                  width={568}
+                  height={766}
+                  className="fullHD:w-full"
+                  sizes="(min-width: 1920px) 100vw, 568px"
                 />
               </div>
             </div>
@@ -187,17 +213,20 @@ const HomePage = () => {
 
         <div className="flex flex-col translate-y-[-25%] ml-8 xl:ml-16 pr-1 lg:pr-[15%]">
           <div className="flex flex-col">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0eb7b91d9af835030446a4e29a1e74334d75e1c671071a100bc0303af4ab361?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+            <Image
+              src={"/threeTriangles.svg"}
+              alt={""}
+              width={407}
+              height={126}
               className="w-[20%] ml-[1%] mb-[5%]"
+              sizes="20vw"
             />
             <Image
               src={"/safeForChildren.svg"}
-              alt={"ABSOLUT SICHERFÜR KINDER"}
+              alt={"ABSOLUT SICHERFÜR KINDER image"}
               width={1546}
               height={373}
-              className="-mt-1 w-full aspect-[4] max-md:max-w-full"
+              className="-mt-1 aspect-[4]"
             />
           </div>
         </div>
@@ -223,7 +252,9 @@ const HomePage = () => {
           <div className={"flex justify-center"}>
             <Image
               src={"/balanceBoard.png"}
-              alt={""}
+              alt={
+                "Balance Board mit den Maßen: Länge 226 cm, Breite 10 cm und Höhe 12 cm, auf einem hellen Hintergrund."
+              }
               width={1354}
               height={761}
               className={"mix-blend-multiply -rotate-[6.142deg]"}
@@ -264,19 +295,22 @@ const HomePage = () => {
 
         <div className="flex flex-col justify-center">
           <div className="flex overflow-hidden relative flex-col justify-center items-center px-8 lg:px-16 py-10 lg:py-20 w-full fill-yellow-400 max-md:max-w-full">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/81491aed540e6f3f7d3866c022a0d2627bed390aadd37238d9bf8f3d21ebfb02?apiKey=4503341e42e942deab3a0c84e55dc7f4&"
+            <Image
+              src={"/footerBackground.svg"}
+              alt={""}
+              width={0}
+              height={0}
               className="max-2xl:object-cover absolute inset-0 size-full"
+              sizes="(max-width: 2560px) 100vw, 3840px"
             />
             <div className="relative mt-40 w-full max-w-[2017px] max-md:mt-10 max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex relative flex-col grow justify-center text-black max-md:mt-10 max-md:max-w-full">
-                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10 max-md:max-w-full">
+                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider max-md:max-w-full">
                       Kundenbetreuung:
                     </div>
-                    <div className="mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
+                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
                       Mo-Fr von 9:00 bis 21:00 Uhr
                       <br />
                       E-mail: support@holzspielzeug.com
@@ -288,7 +322,7 @@ const HomePage = () => {
                     <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10">
                       Standort
                     </div>
-                    <div className="mt-11 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:mt-10">
+                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider">
                       Prinzenstraße 33, 10244, Berlin Deutschland
                     </div>
                   </div>
@@ -298,7 +332,7 @@ const HomePage = () => {
                     <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10 max-md:max-w-full">
                       Shop
                     </div>
-                    <div className="mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
+                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider max-md:max-w-full">
                       Registriert in Deutschland. Alle Rechte vorbehalten
                     </div>
                   </div>
