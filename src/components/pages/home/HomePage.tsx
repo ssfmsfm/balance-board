@@ -24,7 +24,7 @@ const HomePage = () => {
                   className="shrink-0 aspect-[1.16] fill-orange-950 w-5 lg:w-7"
                   sizes="(min-width: 1024px) 28px, 20px"
                 />
-                <h1 className="flex-auto">Woodandhearts</h1>
+                <h1 className="flex-auto">The Carvers</h1>
               </div>
               <Image
                 src="/icons/twoHearts.svg"
@@ -47,9 +47,11 @@ const HomePage = () => {
                 />
                 <h2 className="mt-7">Schwebebalken für Kinder</h2>
               </div>
-              <div className={"flex max-md:justify-center w-full"}>
-                <Link href={"/sold-out"}>
-                  <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 mt-10 xl:mt-24 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
+              <div
+                className={"flex max-md:justify-center w-full mt-10 xl:mt-24"}
+              >
+                <Link href={"#sold-out"}>
+                  <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
                     <span className="flex-auto my-auto">KAUFEN</span>
                     <Image
                       src="/icons/arrowRight.svg"
@@ -102,8 +104,7 @@ const HomePage = () => {
                 <div className="flex flex-[1] items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
                   <div>
                     Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
-                    geraden Balancer von Woodandhearts! Es wird Ihrem Kind
-                    helfen,{" "}
+                    geraden Balancer von The Carvers! Es wird Ihrem Kind helfen,{" "}
                     <span className="font-bold text-orange-600">
                       Korrdination
                     </span>{" "}
@@ -269,7 +270,10 @@ const HomePage = () => {
             </div>
           </section>
 
-          <section className="flex flex-col p-5 xl:p-20 bg-orange-100 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16">
+          <section
+            id="sold-out"
+            className="flex flex-col p-5 xl:p-20 bg-orange-100 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16"
+          >
             <div className="font-allenoire mt-2.5 text-5xl min-[340px]:text-6xl xl:text-[140px] fullHD:text-[200px] uppercase text-orange-950">
               Balance board{" "}
             </div>
@@ -278,7 +282,7 @@ const HomePage = () => {
             </div>
             <div className="flex items-center gap-5 mt-10 xl:mt-24 w-full max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
               <div className="whitespace-nowrap font-allenoire flex-auto text-5xl xl:text-8xl fullHD:text-9xl leading-10 text-black tracking-[4px]">
-                89,00 €
+                119,00 €
               </div>
               <div className="flex items-center gap-4 lg:gap-9 font-extrabold uppercase max-[340px]:flex-wrap">
                 <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950 flex-shrink-0">
@@ -304,7 +308,7 @@ const HomePage = () => {
         </main>
 
         <footer className="flex flex-col justify-center">
-          <div className="flex overflow-hidden relative flex-col justify-center items-center px-8 lg:px-16 py-10 lg:py-20 w-full fill-yellow-400 max-md:max-w-full">
+          <div className="flex overflow-hidden relative flex-col justify-center items-center px-8 lg:px-16 pt-10 pb-4 lg:pt-20 lg:pb-8 w-full fill-yellow-400 max-md:max-w-full">
             <Image
               src={"/footerBackground.svg"}
               alt={""}
@@ -323,7 +327,7 @@ const HomePage = () => {
                     <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
                       Mo-Fr von 9:00 bis 21:00 Uhr
                       <br />
-                      E-mail: support@holzspielzeug.com
+                      E-mail: thecarverssupport@proton.me
                     </div>
                   </div>
                 </div>
@@ -333,7 +337,8 @@ const HomePage = () => {
                       Standort
                     </div>
                     <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider">
-                      Prinzenstraße 33, 10244, Berlin Deutschland
+                      Shevchenka St, 1А, Chernivtsi, Chernivets&apos;ka oblast,
+                      Ukraine, 58000
                     </div>
                   </div>
                 </div>
@@ -347,6 +352,20 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="flex gap-10 mt-14 justify-center">
+                <Link
+                  href="return-policy"
+                  className="text-base xl:text-xl fullHD:text-3xl tracking-wider font-medium capitalize"
+                >
+                  Rückgaberecht
+                </Link>
+                <Link
+                  href="delivery"
+                  className="text-base xl:text-xl fullHD:text-3xl tracking-wider font-medium capitalize"
+                >
+                  Lieferbedingungen
+                </Link>
               </div>
             </div>
           </div>

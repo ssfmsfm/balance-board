@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000000;
-  background: #FFE5B9;
+  background: #ffe5b9;
 
   font-family: Inter;
 }
-

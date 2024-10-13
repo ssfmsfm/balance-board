@@ -15,6 +15,9 @@ const config: Config = {
       fontFamily: {
         allenoire: ["var(--font-allenoire)"],
       },
+      listStyleType: {
+        circle: "circle",
+      },
     },
   },
   plugins: [],
