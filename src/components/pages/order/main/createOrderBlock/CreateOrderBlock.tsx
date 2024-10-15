@@ -4,9 +4,9 @@ import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
 
 const descriptionOptions = [
-  "✔️ Clear assembly instructions. You can do it yourself with our detailed how-to guide.",
-  "✔️ 2 years Warranty.",
-  "✔️ Return or exchange the order within 30 days after receiving.",
+  "✔️ Klare Montageanleitung. Mit unserer detaillierten Anleitung können Sie es selbst tun.",
+  "✔️ 2 Jahre Garantie.",
+  "✔️ Rückgabe oder Umtausch der Bestellung innerhalb von 30 Tagen nach Erhalt.",
 ];
 
 export function formatNumber(value: number) {

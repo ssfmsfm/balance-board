@@ -8,7 +8,7 @@ const SelectedReview = ({
   selectedReview: Review;
 }) => {
   return (
-    <div className="relative grow max-md:h-[400px] max-sm:h-[570px] max-md:w-full">
+    <div className="relative grow max-md:h-[330px] max-sm:h-[360px] max-[550px]:h-[400px] max-[450px]:h-[460px] max-md:w-full">
       {reviews.map((review) => (
         <div
           key={review.id}

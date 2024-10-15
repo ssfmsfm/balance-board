@@ -51,12 +51,11 @@ const reviews: Array<Review> = [
     reviewHeader: "Großartig für Kinder jeden Alters",
     reviewText: (
       <>
-        Ich habe es gekauft, damit die Kinder etwas zu tun haben, wenn die
-        Winter in den Minusbereich kommen und wir nicht mehr so oft nach draußen
+        Ich habe es gekauft, damit die Kinder etwas zu tun haben, wenn der
+        Winter in den Minusbereich kommt und wir nicht mehr so oft nach draußen
         gehen können, und die Kinder lieben es jetzt schon! Die Qualität ist
-        erstaunlich und sie blieben mit mir in Kontakt, um sicherzustellen, dass
-        alles angekommen ist und ob ich irgendwelche Fragen hatte! Vielen Dank
-        dafür! Sehr zu empfehlen für Ihre Kinder!
+        erstaunlich und sie bleiben mit mir in Kontakt, um sicherzustellen, dass
+        alles angekommen ist!
       </>
     ),
   },
