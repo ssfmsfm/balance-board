@@ -2,13 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "react-image-gallery/styles/css/image-gallery.css";
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   color: #000000;
-  background: #ffe5b9;
-
   font-family: Inter;
+}
+
+.image-gallery-thumbnails-wrapper {
+  margin-top: 1.5rem;
+}
+
+.image-gallery-thumbnail {
+  position: relative;
+  border-radius: 0.9375rem;
+  border: none !important;
+  overflow: hidden;
+  /* aspect-ratio: 4 / 3 !important; */
+}
+
+.image-gallery-thumbnail::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-in-out;
+  z-index: 3;
+}
+
+.active.image-gallery-thumbnail::after {
+  background: rgba(0, 0, 0, 0);
+}
+
+.image-gallery-thumbnail + .image-gallery-thumbnail {
+  margin-left: 1rem;
+}
+
+.image-gallery-thumbnail-inner {
+  width: 100%;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.image-gallery-thumbnail-inner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

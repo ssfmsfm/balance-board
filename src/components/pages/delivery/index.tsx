@@ -65,7 +65,7 @@ const deliveryInfoOptions = [
 const Delivery = () => (
   <main
     className={
-      "flex flex-col gap-8 items-center px-2 py-10 overflow-auto box-border"
+      "flex flex-col gap-8 items-center px-2 py-10 overflow-auto box-border bg-main"
     }
   >
     <h1

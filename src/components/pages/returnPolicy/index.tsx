@@ -98,58 +98,56 @@ const policyOptions = [
 ];
 
 const ReturnPolicy = () => (
-  <main
-    className={
-      "flex flex-col gap-8 items-center px-2 py-10 overflow-auto box-border max-w-5xl mx-auto"
-    }
-  >
-    <h1
-      className={
-        "font-black text-4xl text-center xl:text-5xl fullHD:text-7xl mb-10"
-      }
-    >
-      Rückgaberecht
-    </h1>
-    <p className={"text-base xl:text-2xl fullHD:text-4xl indent-4"}>
-      Wir möchten, dass Sie mit Ihrem Kauf vollkommen zufrieden sind. Sollten
-      Sie aus irgendeinem Grund nicht zufrieden sein, können Sie das Montessori
-      Balance Board gemäß den folgenden Bestimmungen zurückgeben:
-    </p>
-    {policyOptions.map((option) => (
-      <div
-        key={option.header}
-        className={`flex flex-col gap-5 ${option.headerAlign || ""}`}
+  <main className={"px-2 py-10 overflow-auto box-border bg-main"}>
+    <div className="max-w-5xl flex flex-col gap-8 items-center mx-auto">
+      <h1
+        className={
+          "font-black text-4xl text-center xl:text-5xl fullHD:text-7xl mb-10"
+        }
       >
-        <div className={" font-black text-2xl xl:text-3xl fullHD:text-5xl"}>
-          {option.header}
-        </div>
-        <div className={"text-base xl:text-2xl fullHD:text-4xl indent-4"}>
-          {option.description}
-        </div>
-        {!!option.listItems.length && (
-          <ul className={`${option.listType} pl-8 flex flex-col gap-4`}>
-            {option.listItems.map((item, index) => (
-              <li
-                key={index}
-                className="text-sm xl:text-xl fullHD:text-3xl pl-2"
-              >
-                <p>{item.content}</p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    ))}
-    <div className={"mt-2 text-base xl:text-2xl fullHD:text-4xl"}>
-      <Link href={"/"}>
-        <button
-          className={
-            "flex gap-5 justify-center items-center font-extrabold text-orange-600 uppercase px-11 max-md:px-5 py-5 mt-3 xl:mt-5 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap"
-          }
+        Rückgaberecht
+      </h1>
+      <p className={"text-base xl:text-2xl fullHD:text-4xl indent-4"}>
+        Wir möchten, dass Sie mit Ihrem Kauf vollkommen zufrieden sind. Sollten
+        Sie aus irgendeinem Grund nicht zufrieden sein, können Sie das
+        Montessori Balance Board gemäß den folgenden Bestimmungen zurückgeben:
+      </p>
+      {policyOptions.map((option) => (
+        <div
+          key={option.header}
+          className={`flex flex-col gap-5 ${option.headerAlign || ""}`}
         >
-          ZURÜCK
-        </button>
-      </Link>
+          <div className={" font-black text-2xl xl:text-3xl fullHD:text-5xl"}>
+            {option.header}
+          </div>
+          <div className={"text-base xl:text-2xl fullHD:text-4xl indent-4"}>
+            {option.description}
+          </div>
+          {!!option.listItems.length && (
+            <ul className={`${option.listType} pl-8 flex flex-col gap-4`}>
+              {option.listItems.map((item, index) => (
+                <li
+                  key={index}
+                  className="text-sm xl:text-xl fullHD:text-3xl pl-2"
+                >
+                  <p>{item.content}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+      <div className={"mt-2 text-base xl:text-2xl fullHD:text-4xl"}>
+        <Link href={"/"}>
+          <button
+            className={
+              "flex gap-5 justify-center items-center font-extrabold text-orange-600 uppercase px-11 max-md:px-5 py-5 mt-3 xl:mt-5 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap"
+            }
+          >
+            ZURÜCK
+          </button>
+        </Link>
+      </div>
     </div>
   </main>
 );

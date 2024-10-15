@@ -1,15 +1,17 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import Link from "next/link";
+import Footer from "@/components/commonComponents/footer/Footer";
+import NavBtn from "@/components/commonComponents/navigationBtn/NavBtn";
 
-const myFont = localFont({
+export const myFont = localFont({
   src: "../../../fonts/allenoire.woff2",
   variable: "--font-allenoire",
 });
 
 const HomePage = () => {
   return (
-    <div className={`${myFont.variable} 4k:flex 4k:justify-center`}>
+    <div className={`${myFont.variable} 4k:flex 4k:justify-center bg-main`}>
       <div className={"flex flex-col max-w-[2560px]"}>
         <header className="flex gap-5 flex-col md:flex-row max-md:gap-0 overflow-hidden">
           <section className="flex flex-col w-6/12 max-md:w-full max-xl:px-8 xl:ml-16">
@@ -50,20 +52,7 @@ const HomePage = () => {
               <div
                 className={"flex max-md:justify-center w-full mt-10 xl:mt-24"}
               >
-                <Link href={"#sold-out"}>
-                  <button className="flex gap-5 justify-center items-center px-11 max-md:px-5 py-5 max-w-full text-base xl:text-2xl fullHD:text-4xl whitespace-nowrap bg-orange-100 rounded-[40px] tracking-[5px] xl:tracking-[9.6px]  max-md:flex-wrap">
-                    <span className="flex-auto my-auto">KAUFEN</span>
-                    <Image
-                      src="/icons/arrowRight.svg"
-                      alt=""
-                      width="0"
-                      height="0"
-                      priority
-                      className="shrink-0 max-w-full  aspect-[6.67] stroke-[4px] stroke-orange-600  w-28 lg:w-44"
-                      sizes="(min-width: 1024px) 176px, 112px"
-                    />
-                  </button>
-                </Link>
+                <NavBtn href={"#to-order"} text={"KAUFEN"} />
               </div>
             </div>
           </section>
@@ -271,7 +260,7 @@ const HomePage = () => {
           </section>
 
           <section
-            id="sold-out"
+            id="to-order"
             className="flex flex-col p-5 xl:p-20 bg-orange-100 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16"
           >
             <div className="font-allenoire mt-2.5 text-5xl min-[340px]:text-6xl xl:text-[140px] fullHD:text-[200px] uppercase text-orange-950">
@@ -288,7 +277,7 @@ const HomePage = () => {
                 <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950 flex-shrink-0">
                   1
                 </div>
-                <Link href={"/sold-out"}>
+                <Link href={"/order"}>
                   <button className="grow justify-center px-8 xl:px-16 py-4 xl:py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
                     IN DEN WARENKORB
                   </button>
@@ -306,70 +295,7 @@ const HomePage = () => {
             </div>
           </section>
         </main>
-
-        <footer className="flex flex-col justify-center">
-          <div className="flex overflow-hidden relative flex-col justify-center items-center px-8 lg:px-16 pt-10 pb-4 lg:pt-20 lg:pb-8 w-full fill-yellow-400 max-md:max-w-full">
-            <Image
-              src={"/footerBackground.svg"}
-              alt={""}
-              width={0}
-              height={0}
-              className="max-2xl:object-cover absolute inset-0 size-full"
-              sizes="(max-width: 2560px) 100vw, 3840px"
-            />
-            <div className="relative mt-40 w-full max-w-[2017px] max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                  <div className="flex relative flex-col grow justify-center text-black max-md:mt-10 max-md:max-w-full">
-                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider max-md:max-w-full">
-                      Kundenbetreuung:
-                    </div>
-                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider leading-10 max-md:max-w-full">
-                      Mo-Fr von 9:00 bis 21:00 Uhr
-                      <br />
-                      E-mail: thecarverssupport@proton.me
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                  <div className="flex relative flex-col justify-center text-black max-md:mt-10">
-                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10">
-                      Standort
-                    </div>
-                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider">
-                      Shevchenka St, 1А, Chernivtsi, Chernivets&apos;ka oblast,
-                      Ukraine, 58000
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                  <div className="flex relative flex-col justify-center text-black max-md:mt-10 max-md:max-w-full">
-                    <div className="text-2xl xl:text-3xl fullHD:text-5xl font-bold tracking-wider leading-10 max-md:max-w-full">
-                      Shop
-                    </div>
-                    <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider max-md:max-w-full">
-                      Registriert in Deutschland. Alle Rechte vorbehalten
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-10 mt-14 justify-center">
-                <Link
-                  href="return-policy"
-                  className="text-base xl:text-xl fullHD:text-3xl tracking-wider font-medium capitalize"
-                >
-                  Rückgaberecht
-                </Link>
-                <Link
-                  href="delivery"
-                  className="text-base xl:text-xl fullHD:text-3xl tracking-wider font-medium capitalize"
-                >
-                  Lieferbedingungen
-                </Link>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

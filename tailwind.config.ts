@@ -18,6 +18,28 @@ const config: Config = {
       listStyleType: {
         circle: "circle",
       },
+      backgroundColor: {
+        main: "#ffe5b9",
+      },
+      spacing: {
+        30: "7.5rem",
+      },
+      transitionProperty: {
+        background: "background-color",
+      },
+      borderRadius: {
+        "2.5xl": "1.5rem",
+        10: "2.5rem",
+        13: "3.25rem",
+        15: "3.75rem",
+      },
+      fontSize: {
+        "4.5xl": "2.5rem",
+        "7.5xl": "5rem",
+      },
+      lineHeight: {
+        "x-tight": "110% !important",
+      },
     },
   },
   plugins: [],

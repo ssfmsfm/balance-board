@@ -19,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="verify-paysera"
+          content="b8930c795faeb510fce313fb4ddacfef"
+        />
+      </head>
       <body className={inter.className}>
         {children} <FacebookPixel /> <Analytics />
       </body>
