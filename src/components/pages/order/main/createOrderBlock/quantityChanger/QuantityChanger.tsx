@@ -30,7 +30,7 @@ const QuantityChanger = ({
       >
         -
       </button>
-      <div className="py-1 xl:py-2 2xl:py-3 fullHD:py-4 px-2 xl:px-4 2xl:px-6 fullHD:px-8 flex items-center justify-center rounded text-2xl xl:text-3xl 2xl:text-4xl fullHD:text-4.5xl text-yellow-950 bg-white rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-3xl select-none font-extrabold">
+      <div className="p-1 xl:p-2 2xl:p-3 fullHD:p-5 min-w-10 xl:min-w-[3.25rem] 2xl:min-w-16 fullHD:min-w-20 flex items-center justify-center rounded text-2xl xl:text-3xl 2xl:text-4xl fullHD:text-4.5xl text-yellow-950 bg-white rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-3xl select-none font-extrabold">
         {quantity}
       </div>
       <button

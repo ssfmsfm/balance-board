@@ -29,7 +29,7 @@ const CreateOrderBlock = () => {
   return (
     <div className="relative md:grow max-md:w-full flex flex-col flex-nowrap">
       <div className="relative grow rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-8 xl:pt-12 2xl:pt-14 fullHD:pt-20 pb-5 xl:pb-8 2xl:pb-10 fullHD:pb-12 flex flex-col flex-nowrap">
-        <p className="font-extrabold text-xl md:text-2xl xl:text-3xl fullHD:text-4xl uppercase">
+        <p className="font-extrabold text-base md:text-xl xl:text-3xl fullHD:text-4xl uppercase">
           mit Rutsche für Kinder
         </p>
         <h1
@@ -55,15 +55,15 @@ const CreateOrderBlock = () => {
               <h4 className="font-extrabold text-2xl xl:text-3xl fullHD:text-4xl">
                 Größe
               </h4>
-              <div className="bg-orange-600 text-gray-100 px-6 xl:px-7 2xl:px-8 fullHD:px-10 py-2 xl:py-3 2xl:py-4 fullHD:py-5 rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-2.5xl text-sm xl:text-base 2xl:text-lg fullHD:text-xl">
-                3.5 M
+              <div className="font-extrabold bg-orange-600 text-gray-100 px-6 xl:px-7 2xl:px-8 fullHD:px-10 py-2 xl:py-3 2xl:py-4 fullHD:py-5 rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-2.5xl text-sm xl:text-base 2xl:text-lg fullHD:text-xl">
+                3,5 M
               </div>
             </div>
             <div className="flex flex-col gap-2 xl:gap-3 fullHD:gap-5">
               <h4 className="font-extrabold text-2xl xl:text-3xl fullHD:text-4xl">
                 Rutsche
               </h4>
-              <div className="bg-amber-400 text-gray-100 px-6 xl:px-7 2xl:px-8 fullHD:px-10 py-2 xl:py-3 2xl:py-4 fullHD:py-5 rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-2.5xl text-sm xl:text-base 2xl:text-lg fullHD:text-xl">
+              <div className="font-extrabold bg-amber-400 text-gray-100 px-6 xl:px-7 2xl:px-8 fullHD:px-10 py-2 xl:py-3 2xl:py-4 fullHD:py-5 rounded-lg xl:rounded-xl 2xl:rounded-2xl fullHD:rounded-2.5xl text-sm xl:text-base 2xl:text-lg fullHD:text-xl">
                 KLETTERGRIFFE
               </div>
             </div>

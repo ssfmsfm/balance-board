@@ -15,7 +15,7 @@ const SelectedReview = ({
           className={`absolute w-full rounded-2xl xl:rounded-3xl fullHD:rounded-10 bg-orange-50 p-6 xl:p-9 fullHD:p-16 flex flex-col flex-nowrap gap-4 xl:gap-5 fullHD:gap-8 left-0 top-0 transition-opacity duration-700 ease-in ${review.id === selectedReview.id ? "opacity-100" : "opacity-0"}`}
         >
           <div className="hidden max-md:flex flex-row flex-nowrap gap-3 pb-6">
-            <div className="w-14 aspect-square flex items-center justify-center font-extrabold">
+            <div className="w-14 aspect-square flex items-center justify-center font-extrabold bg-white rounded-full">
               <span>{selectedReview.author.slice(0, 1).toUpperCase()}</span>
             </div>
             <div className="flex flex-col">

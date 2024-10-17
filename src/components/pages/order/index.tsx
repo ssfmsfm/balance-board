@@ -20,7 +20,7 @@ const Order = () => {
               className="shrink-0 aspect-[1.16] fill-orange-950 w-5 lg:w-7"
               sizes="(min-width: 1024px) 28px, 20px"
             />
-            <h1 className="flex-auto">The Carvers</h1>
+            <h1 className="flex-auto uppercase">The Carvers</h1>
           </div>
           <NavBtn href={"/"} text={"BACK"} reverse />
           <Image
