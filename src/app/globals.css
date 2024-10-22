@@ -13,6 +13,10 @@ body {
   font-family: Inter;
 }
 
+body:has(.modal-overlay) {
+  overflow: hidden;
+}
+
 .image-gallery-thumbnails-wrapper {
   margin-top: 1.5rem;
 }

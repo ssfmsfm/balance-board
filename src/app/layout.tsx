@@ -26,7 +26,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children} <FacebookPixel /> <Analytics />
+        {children}
+        <FacebookPixel />
+        <Analytics />
       </body>
     </html>
   );
