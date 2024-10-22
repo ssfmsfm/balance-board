@@ -15,13 +15,12 @@ export type FormState = {
 };
 
 export async function POST(request: Request) {
-  // console.log(request);
   const { state, origin }: { state: FormState; origin: string } =
     await request.json();
-  console.log(state);
+
   const password = process.env.PASSWORD || "",
     projectid = process.env.PROJECT_ID || "",
-    orderid = uuidv4(); // Replace with your actual project ID, // Your project password
+    orderid = uuidv4();
 
   // Step 1: Prepare the parameters
   const params = {
