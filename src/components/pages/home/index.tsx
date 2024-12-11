@@ -26,7 +26,7 @@ const HomePage = () => {
                   className="shrink-0 aspect-[1.16] fill-orange-950 w-5 lg:w-7"
                   sizes="(min-width: 1024px) 28px, 20px"
                 />
-                <h1 className="flex-auto">The Carvers</h1>
+                <h1 className="flex-auto">RP and Partners</h1>
               </div>
               <Image
                 src="/icons/twoHearts.svg"
@@ -93,7 +93,8 @@ const HomePage = () => {
                 <div className="flex flex-[1] items-center order-3 w-[90%] 2xl:w-full 2xl:row-start-2 px-8 py-10 xl:px-16 xl:py-20 bg-orange-100 rounded-[60px] rounded-l-none min-[2561px]:rounded-[60px] max-md:max-w-full text-base xl:text-2xl fullHD:text-4xl tracking-wider">
                   <div>
                     Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem
-                    geraden Balancer von The Carvers! Es wird Ihrem Kind helfen,{" "}
+                    geraden Balancer von RP and Partners! Es wird Ihrem Kind
+                    helfen,{" "}
                     <span className="font-bold text-orange-600">
                       Korrdination
                     </span>{" "}

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "BALANCE BOARD",
   description:
-    "Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem geraden Balancer von The Carvers! Es wird Ihrem Kind helfen, Korrdination und Gleichgewichtssinn zu entwickeln.",
+    "Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem geraden Balancer von RP and Partners! Es wird Ihrem Kind helfen, Korrdination und Gleichgewichtssinn zu entwickeln.",
 };
 
 export default function RootLayout({

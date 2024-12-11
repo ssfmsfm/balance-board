@@ -32,8 +32,7 @@ const Footer = () => (
                 Standort
               </div>
               <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider">
-                Shevchenka St, 1А, Chernivtsi, Chernivets&apos;ka oblast,
-                Ukraine, 58000
+                st. SZCZĘSNA 26, Warsaw, 02-454, Polen
               </div>
             </div>
           </div>
@@ -43,7 +42,7 @@ const Footer = () => (
                 Shop
               </div>
               <div className="mt-4 xl:mt-9 text-base xl:text-2xl fullHD:text-4xl tracking-wider max-md:max-w-full">
-                Registriert in Deutschland. Alle Rechte vorbehalten
+                Registriert in Polen. Alle Rechte vorbehalten
               </div>
             </div>
           </div>
