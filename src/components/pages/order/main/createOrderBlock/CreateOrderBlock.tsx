@@ -1,12 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
-import OrderModal from "../../orderModal/OrderModal";
+// import OrderModal from "../../orderModal/OrderModal";
 import { formatNumber } from "@/utils/formatPrice";
-import { useRouter } from "next/navigation";
-import FinishPaymentModal from "../../finishPaymentModal/FinishPaymentModal";
-import { FINISH_TYPE } from "@/constants/enums";
+// import { useRouter } from "next/navigation";
+// import FinishPaymentModal from "../../finishPaymentModal/FinishPaymentModal";
+// import { FINISH_TYPE } from "@/constants/enums";
 
 const descriptionOptions = [
   "✔️ Klare Montageanleitung. Mit unserer detaillierten Anleitung können Sie es selbst tun.",
@@ -16,30 +16,30 @@ const descriptionOptions = [
 
 const CreateOrderBlock = () => {
   const [quantity, setQuantity] = useState(1);
-  const [isOpenForm, setIsOpenForm] = useState(false);
+  // const [isOpenForm, setIsOpenForm] = useState(false);
   // const hasTransitionedIn = useMountTransition(isOpenForm, 300);
-  const [finishPaymentResult, setFinishPaymentResult] =
-    useState<FINISH_TYPE | null>(null);
-  const router = useRouter();
+  // const [finishPaymentResult, setFinishPaymentResult] =
+  //   useState<FINISH_TYPE | null>(null);
+  // const router = useRouter();
 
-  useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
+  // useEffect(() => {
+  //   const searchParams = new URLSearchParams(window.location.search);
 
-    // Check for specific search parameters
-    const paymentResult = searchParams.get("paymentResult"); // Replace with your actual param name
+  //   // Check for specific search parameters
+  //   const paymentResult = searchParams.get("paymentResult"); // Replace with your actual param name
 
-    if (paymentResult) {
-      (paymentResult === FINISH_TYPE.SUCCESSFUL ||
-        paymentResult === FINISH_TYPE.UNSUCCESSFUL) &&
-        setFinishPaymentResult(paymentResult);
+  //   if (paymentResult) {
+  //     (paymentResult === FINISH_TYPE.SUCCESSFUL ||
+  //       paymentResult === FINISH_TYPE.UNSUCCESSFUL) &&
+  //       setFinishPaymentResult(paymentResult);
 
-      // Clear all search parameters by replacing the current URL
-      const { pathname } = window.location;
+  //     // Clear all search parameters by replacing the current URL
+  //     const { pathname } = window.location;
 
-      router.replace(pathname); // This will remove all search params
-    }
-    //eslint-disable-next-line
-  }, []);
+  //     router.replace(pathname); // This will remove all search params
+  //   }
+  //   //eslint-disable-next-line
+  // }, []);
 
   const changeQuantity = useCallback(
     (value: number) => {
@@ -48,13 +48,17 @@ const CreateOrderBlock = () => {
     [, setQuantity]
   );
 
-  const handleOpenOrderForm = useCallback(() => setIsOpenForm(true), []);
-  const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
-
-  const handleClearFinishPaymentResult = useCallback(
-    () => setFinishPaymentResult(null),
+  const handleOrder = useCallback(
+    () => (window.location.href = process.env.NEXT_PUBLIC_STRIPE_LINK || ""),
     []
   );
+
+  // const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
+
+  // const handleClearFinishPaymentResult = useCallback(
+  //   () => setFinishPaymentResult(null),
+  //   []
+  // );
 
   return (
     <>
@@ -123,13 +127,13 @@ const CreateOrderBlock = () => {
           </div>
           <button
             className="font-extrabold max-sm:self-center max-sm:w-full px-8 xl:px-12 fullHD:px-16 py-2 xl:py-4 fullHD::py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-2xl xl:rounded-3xl fullHD:rounded-10 tracking-[4px] xl:tracking-[6px] fullHD:tracking-[9.6px] w-fit mt-2"
-            onClick={handleOpenOrderForm}
+            onClick={handleOrder}
           >
             KAUFEN
           </button>
         </div>
       </div>
-      {isOpenForm && (
+      {/* {isOpenForm && (
         <OrderModal onClose={handleCloseOrderForm} quantity={quantity} />
       )}
       {!!finishPaymentResult && (
@@ -137,7 +141,7 @@ const CreateOrderBlock = () => {
           onClose={handleClearFinishPaymentResult}
           finishType={finishPaymentResult}
         />
-      )}
+      )} */}
     </>
   );
 };
