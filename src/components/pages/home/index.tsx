@@ -52,7 +52,7 @@ const HomePage = () => {
               <div
                 className={"flex max-md:justify-center w-full mt-10 xl:mt-24"}
               >
-                <NavBtn href={"#to-order"} text={"KAUFEN"} />
+                <NavBtn href={"#to-order"} text={"BESTELLEN"} />
               </div>
             </div>
           </section>
