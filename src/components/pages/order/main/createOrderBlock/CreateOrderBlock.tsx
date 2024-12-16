@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
-// import OrderModal from "../../orderModal/OrderModal";
+import OrderModal from "../../orderModal/OrderModal";
 import { formatNumber } from "@/utils/formatPrice";
 // import { useRouter } from "next/navigation";
 // import FinishPaymentModal from "../../finishPaymentModal/FinishPaymentModal";
@@ -16,8 +16,7 @@ const descriptionOptions = [
 
 const CreateOrderBlock = () => {
   const [quantity, setQuantity] = useState(1);
-  // const [isOpenForm, setIsOpenForm] = useState(false);
-  // const hasTransitionedIn = useMountTransition(isOpenForm, 300);
+  const [isOpenForm, setIsOpenForm] = useState(false);
   // const [finishPaymentResult, setFinishPaymentResult] =
   //   useState<FINISH_TYPE | null>(null);
   // const router = useRouter();
@@ -48,12 +47,9 @@ const CreateOrderBlock = () => {
     [, setQuantity]
   );
 
-  const handleOrder = useCallback(
-    () => (window.location.href = process.env.NEXT_PUBLIC_STRIPE_LINK || ""),
-    []
-  );
+  const handleOpenOrder = useCallback(() => setIsOpenForm(true), []);
 
-  // const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
+  const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
 
   // const handleClearFinishPaymentResult = useCallback(
   //   () => setFinishPaymentResult(null),
@@ -127,16 +123,16 @@ const CreateOrderBlock = () => {
           </div>
           <button
             className="font-extrabold max-sm:self-center max-sm:w-full px-8 xl:px-12 fullHD:px-16 py-2 xl:py-4 fullHD::py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-2xl xl:rounded-3xl fullHD:rounded-10 tracking-[4px] xl:tracking-[6px] fullHD:tracking-[9.6px] w-fit mt-2"
-            onClick={handleOrder}
+            onClick={handleOpenOrder}
           >
             KAUFEN
           </button>
         </div>
       </div>
-      {/* {isOpenForm && (
+      {isOpenForm && (
         <OrderModal onClose={handleCloseOrderForm} quantity={quantity} />
       )}
-      {!!finishPaymentResult && (
+      {/* {!!finishPaymentResult && (
         <FinishPaymentModal
           onClose={handleClearFinishPaymentResult}
           finishType={finishPaymentResult}
