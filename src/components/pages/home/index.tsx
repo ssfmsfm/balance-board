@@ -272,7 +272,7 @@ const HomePage = () => {
             </div>
             <div className="flex items-center gap-5 mt-10 xl:mt-24 w-full max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
               <div className="whitespace-nowrap font-allenoire flex-auto text-5xl xl:text-8xl fullHD:text-9xl leading-10 text-black tracking-[4px]">
-                119,00 €
+                89,00 €
               </div>
               <div className="flex items-center gap-4 lg:gap-9 font-extrabold uppercase max-[340px]:flex-wrap">
                 <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950 flex-shrink-0">

@@ -47,9 +47,12 @@ const CreateOrderBlock = () => {
     [, setQuantity]
   );
 
-  const handleOpenOrder = useCallback(() => setIsOpenForm(true), []);
+  const handleOrder = useCallback(
+    () => (window.location.href = process.env.NEXT_PUBLIC_STRIPE_LINK || ""),
+    []
+  );
 
-  const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
+  // const handleCloseOrderForm = useCallback(() => setIsOpenForm(false), []);
 
   // const handleClearFinishPaymentResult = useCallback(
   //   () => setFinishPaymentResult(null),
@@ -110,7 +113,7 @@ const CreateOrderBlock = () => {
         <div className="relative grow flex max-sm:flex-col gap-2 justify-between items-stretch flex-wrap mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8">
           <div className="relative flex flex-row max-sm:w-fit flex-nowrap max-sm:flex-wrap gap-2 fullHD:gap-3">
             <h3 className="whitespace-nowrap font-allenoire flex-auto text-4xl xl:text-5xl fullHD:text-6xl leading-10 text-black tracking-[4px] self-end">
-              {`€${formatNumber(119 * quantity)}`}
+              {`€${formatNumber(89 * quantity)}`}
             </h3>
             <div className="relative flex flex-col self-start items-end py-2 xl:py-3 fullHD:py-4">
               <p className="font-extrabold text-xl xl:text-2xl fullHD:text-3xl tracking-wider leading-x-tight text-orange-600 line-through">
@@ -123,15 +126,15 @@ const CreateOrderBlock = () => {
           </div>
           <button
             className="font-extrabold max-sm:self-center max-sm:w-full px-8 xl:px-12 fullHD:px-16 py-2 xl:py-4 fullHD::py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-2xl xl:rounded-3xl fullHD:rounded-10 tracking-[4px] xl:tracking-[6px] fullHD:tracking-[9.6px] w-fit mt-2"
-            onClick={handleOpenOrder}
+            onClick={handleOrder}
           >
             KAUFEN
           </button>
         </div>
       </div>
-      {isOpenForm && (
+      {/* {isOpenForm && (
         <OrderModal onClose={handleCloseOrderForm} quantity={quantity} />
-      )}
+      )} */}
       {/* {!!finishPaymentResult && (
         <FinishPaymentModal
           onClose={handleClearFinishPaymentResult}
