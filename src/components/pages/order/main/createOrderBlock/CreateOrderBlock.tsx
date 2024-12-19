@@ -2,11 +2,14 @@
 
 import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
-import OrderModal from "../../orderModal/OrderModal";
 import { formatNumber } from "@/utils/formatPrice";
+import { Pacifico } from "next/font/google";
+
 // import { useRouter } from "next/navigation";
 // import FinishPaymentModal from "../../finishPaymentModal/FinishPaymentModal";
 // import { FINISH_TYPE } from "@/constants/enums";
+
+const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
 
 const descriptionOptions = [
   "✔️ Klare Montageanleitung. Mit unserer detaillierten Anleitung können Sie es selbst tun.",
@@ -61,7 +64,9 @@ const CreateOrderBlock = () => {
 
   return (
     <>
-      <div className="relative md:grow max-md:w-full flex flex-col flex-nowrap">
+      <div
+        className={"relative md:grow max-md:w-full flex flex-col flex-nowrap"}
+      >
         <div className="relative grow rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-8 xl:pt-12 2xl:pt-14 fullHD:pt-20 pb-5 xl:pb-8 2xl:pb-10 fullHD:pb-12 flex flex-col flex-nowrap">
           <p className="font-extrabold text-base md:text-xl xl:text-3xl fullHD:text-4xl uppercase">
             mit Rutsche für Kinder
@@ -110,6 +115,11 @@ const CreateOrderBlock = () => {
             />
           </div>
         </div>
+        <div
+          className={`relative grow flex flex-row flex-nowrap justify-between items-center mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-classic-red px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8 gap-4 text-base xs:text-lg md:text-xl xl:text-2xl 2xl:text-3xl fullHD:text-4xl font-bold text-white text-center ${pacifico.className}`}
+        >
+          Kaufen Sie jetzt, um sich das Weihnachtsangebot zu sichern!
+        </div>
         <div className="relative grow flex max-sm:flex-col gap-2 justify-between items-stretch flex-wrap mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8">
           <div className="relative flex flex-row max-sm:w-fit flex-nowrap max-sm:flex-wrap gap-2 fullHD:gap-3">
             <h3 className="whitespace-nowrap font-allenoire flex-auto text-4xl xl:text-5xl fullHD:text-6xl leading-10 text-black tracking-[4px] self-end">
@@ -117,7 +127,7 @@ const CreateOrderBlock = () => {
             </h3>
             <div className="relative flex flex-col self-start items-end py-2 xl:py-3 fullHD:py-4">
               <p className="font-extrabold text-xl xl:text-2xl fullHD:text-3xl tracking-wider leading-x-tight text-orange-600 line-through">
-                &nbsp;€{formatNumber(199 * quantity)}&nbsp;
+                &nbsp;€{formatNumber(159 * quantity)}&nbsp;
               </p>
               <p className="font-extrabold text-base xl:text-xl fullHD:text-2xl tracking-wider leading-tight xl:leading-x-tight fullHD:leading-x-tight text-orange-600">
                 SAVE 45%
