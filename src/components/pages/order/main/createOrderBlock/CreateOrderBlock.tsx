@@ -116,7 +116,7 @@ const CreateOrderBlock = () => {
           </div>
         </div>
         <div
-          className={`relative grow flex flex-row flex-nowrap justify-between items-center mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-classic-red px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8 gap-4 text-base xs:text-lg md:text-xl xl:text-2xl 2xl:text-3xl fullHD:text-4xl font-bold text-white text-center ${pacifico.className}`}
+          className={`relative grow mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-classic-red px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8 gap-4 text-base xs:text-lg md:text-xl xl:text-2xl 2xl:text-3xl fullHD:text-4xl font-bold text-white text-center ${pacifico.className}`}
         >
           Kaufen Sie jetzt, um sich das Weihnachtsangebot zu sichern!
         </div>
