@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
 import { formatNumber } from "@/utils/formatPrice";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 
 // import { useRouter } from "next/navigation";
 // import FinishPaymentModal from "../../finishPaymentModal/FinishPaymentModal";
@@ -68,6 +69,14 @@ const CreateOrderBlock = () => {
         className={"relative md:grow max-md:w-full flex flex-col flex-nowrap"}
       >
         <div className="relative grow rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-8 xl:pt-12 2xl:pt-14 fullHD:pt-20 pb-5 xl:pb-8 2xl:pb-10 fullHD:pb-12 flex flex-col flex-nowrap">
+          <Image
+            src={"/xmas-ball.png"}
+            alt="xmas ball"
+            width={250}
+            height={250}
+            className="absolute top-0 right-0 translate-x-[25%] translate-y-[-35%] h-auto w-[13vw] min-w-[120px] max-w-[250px]"
+            // className="absolute top-0 right-0 translate-x-[20%] translate-y-[-20%] h-auto w-[150px] xl:w-[250px]"
+          />
           <p className="font-extrabold text-base md:text-xl xl:text-3xl fullHD:text-4xl uppercase">
             mit Rutsche für Kinder
           </p>

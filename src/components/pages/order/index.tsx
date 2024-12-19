@@ -23,7 +23,7 @@ const Order = () => {
             <h1 className="flex-auto uppercase">RP and Partners</h1>
           </div>
           <NavBtn href={"/"} text={"BACK"} reverse />
-          <Image
+          {/* <Image
             src="/icons/twoHearts.svg"
             alt=""
             width="0"
@@ -31,9 +31,10 @@ const Order = () => {
             priority
             className="absolute right-30 -bottom-7 max-w-full aspect-[1.02] w-16 sm:w-32 xl:w-40 max-md:hidden"
             sizes="(min-width: 1280px) 160px, (min-width: 640px) 128px, 64px"
-          />
+          /> */}
         </header>
-        <main className="px-4 md:px-8 xl:px-12 fullHD:px-16 overflow-hidden">
+        <main className="px-4 md:px-8 xl:px-12 fullHD:px-16">
+          {/* <main className="px-4 md:px-8 xl:px-12 fullHD:px-16 overflow-hidden"> */}
           <Main />
           <Reviews />
         </main>
