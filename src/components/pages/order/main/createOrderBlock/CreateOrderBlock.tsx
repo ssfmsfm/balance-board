@@ -117,7 +117,7 @@ const CreateOrderBlock = () => {
             </h3>
             <div className="relative flex flex-col self-start items-end py-2 xl:py-3 fullHD:py-4">
               <p className="font-extrabold text-xl xl:text-2xl fullHD:text-3xl tracking-wider leading-x-tight text-orange-600 line-through">
-                &nbsp;€{formatNumber(199 * quantity)}&nbsp;
+                &nbsp;€{formatNumber(159 * quantity)}&nbsp;
               </p>
               <p className="font-extrabold text-base xl:text-xl fullHD:text-2xl tracking-wider leading-tight xl:leading-x-tight fullHD:leading-x-tight text-orange-600">
                 SAVE 45%
