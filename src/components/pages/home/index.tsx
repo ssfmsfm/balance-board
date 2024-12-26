@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import Footer from "@/components/commonComponents/footer/Footer";
 import NavBtn from "@/components/commonComponents/navigationBtn/NavBtn";
-import Timer from "./timer/Timer";
 
 export const myFont = localFont({
   src: "../../../fonts/allenoire.woff2",
@@ -29,18 +28,15 @@ const HomePage = () => {
                 />
                 <h1 className="flex-auto">RP and Partners</h1>
               </div>
-              <div className="relative flex flex-col sm:flex-row md:flex-col xl:flex-row items-end max-xl:items-start flex-nowrap gap-2 max-xl:gap-6 w-full max-xl:pt-6">
-                <Image
-                  src="/icons/twoHearts.svg"
-                  alt=""
-                  width="0"
-                  height="0"
-                  priority
-                  className="xl:mt-28 max-w-full aspect-[1.02] w-16 sm:w-32 xl:w-40"
-                  sizes="(min-width: 1280px) 160px, (min-width: 640px) 128px, 64px"
-                />
-                <Timer />
-              </div>
+              <Image
+                src="/icons/twoHearts.svg"
+                alt=""
+                width="0"
+                height="0"
+                priority
+                className="mt-10 xl:mt-28 max-w-full aspect-[1.02] w-16 sm:w-32 xl:w-40"
+                sizes="(min-width: 1280px) 160px, (min-width: 640px) 128px, 64px"
+              />
               <div className="flex flex-col justify-end self-stretch mt-16 text-base xl:text-2xl fullHD:text-4xl tracking-[6px] xl:tracking-[10.4px] max-md:mt-10 max-md:max-w-full">
                 <Image
                   src="/icons/logo.svg"
@@ -274,7 +270,7 @@ const HomePage = () => {
             <div className="text-xs md:text-base xl:text-2xl fullHD:text-4xl font-extrabold text-orange-600 uppercase tracking-[10.4px] max-md:mr-1.5 max-md:max-w-full">
               Schwebebalken für IHRE KINDER
             </div>
-            <div className="flex items-center gap-5 mt-10 xl:mt-24 w-full max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full pb-16 xl:pb-28">
+            <div className="flex items-center gap-5 mt-10 xl:mt-24 w-full max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
               <div className="whitespace-nowrap font-allenoire flex-auto text-5xl xl:text-8xl fullHD:text-9xl leading-10 text-black tracking-[4px]">
                 89,00 €
               </div>
@@ -282,21 +278,14 @@ const HomePage = () => {
                 <div className="flex items-center justify-center w-[50px] xl:w-[80px] h-[50px] xl:h-[80px] text-2xl sm:text-3xl xl:text-4xl fullHD:text-5xl bg-white rounded-[25%] text-orange-950 flex-shrink-0">
                   1
                 </div>
-                <Link href={"/order"} className="relative">
+                <Link href={"/order"}>
                   <button className="grow justify-center px-8 xl:px-16 py-4 xl:py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-[40px] tracking-[9.6px] w-fit max-md:pr-7 max-md:pl-6 max-md:max-w-full">
                     IN DEN WARENKORB
                   </button>
-                  <Image
-                    src="/free-delivery.png"
-                    alt="free delivery"
-                    width={315}
-                    height={100}
-                    className="absolute w-[40%] h-auto top-[100%] right-[0] translate-y-[-15%] translate-x-[10%] rotate-[35deg]"
-                  />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-2 lg:gap-5 md:mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
+            <div className="flex gap-2 lg:gap-5 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:mr-1.5 max-md:max-w-full">
               <div className="shrink basis-auto grow-0">
                 ✔️ 2 Jahre Garantie
               </div>

@@ -20,10 +20,6 @@ const config: Config = {
       },
       backgroundColor: {
         main: "#ffe5b9",
-        // "classic-red": "red",
-      },
-      colors: {
-        "classic-red": "red",
       },
       spacing: {
         30: "7.5rem",
