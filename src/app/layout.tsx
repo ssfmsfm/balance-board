@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import FacebookPixel from "../components/commonComponents/FacebookPixel";
-import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleTagManager } from "@next/third-parties/google";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const GTM_ID = process.env.GTM_ID || "";
 
 export const metadata: Metadata = {
   title: "BALANCE BOARD",
@@ -19,12 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="verify-paysera"
-          content="b8930c795faeb510fce313fb4ddacfef"
-        />
-      </head>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className={inter.className}>
         {children}
         <FacebookPixel />
