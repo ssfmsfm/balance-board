@@ -5,8 +5,6 @@ import QuantityChanger from "./quantityChanger/QuantityChanger";
 import { formatNumber } from "@/utils/formatPrice";
 import { IProductData } from "@/constants/interfaces";
 
-const GTM_BUY_BTN_ID = process.env.NEXT_PUBLIC_GTM_BUY_BTN_ID || "";
-
 type Props = {
   productData: Omit<IProductData, "imagesSrc">;
 };
@@ -20,6 +18,7 @@ const CreateOrderBlock: React.FC<Props> = ({
     price,
     finalPrice,
     stripeLink,
+    gtmBuyBtnId,
   },
 }) => {
   const [quantity, setQuantity] = useState(1);
@@ -96,7 +95,7 @@ const CreateOrderBlock: React.FC<Props> = ({
             </div>
           </div>
           <button
-            id={GTM_BUY_BTN_ID}
+            id={gtmBuyBtnId}
             className="font-extrabold max-sm:self-center max-sm:w-full px-8 xl:px-12 fullHD:px-16 py-2 xl:py-4 fullHD::py-6 text-xs md:text-base xl:text-2xl fullHD:text-4xl text-orange-100 bg-orange-600 rounded-2xl xl:rounded-3xl fullHD:rounded-10 tracking-[4px] xl:tracking-[6px] fullHD:tracking-[9.6px] w-fit mt-2"
             onClick={handleOrder}
           >
