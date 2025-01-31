@@ -3,16 +3,25 @@
 import { useCallback, useState } from "react";
 import QuantityChanger from "./quantityChanger/QuantityChanger";
 import { formatNumber } from "@/utils/formatPrice";
+import { IProductData } from "@/constants/interfaces";
 
 const GTM_BUY_BTN_ID = process.env.NEXT_PUBLIC_GTM_BUY_BTN_ID || "";
 
-const descriptionOptions = [
-  "✔️ Klare Montageanleitung. Mit unserer detaillierten Anleitung können Sie es selbst tun.",
-  "✔️ 2 Jahre Garantie.",
-  "✔️ Rückgabe oder Umtausch der Bestellung innerhalb von 30 Tagen nach Erhalt.",
-];
+type Props = {
+  productData: Omit<IProductData, "imagesSrc">;
+};
 
-const CreateOrderBlock = () => {
+const CreateOrderBlock: React.FC<Props> = ({
+  productData: {
+    preHeader,
+    header,
+    description,
+    descriptionOptions,
+    price,
+    finalPrice,
+    stripeLink,
+  },
+}) => {
   const [quantity, setQuantity] = useState(1);
 
   const changeQuantity = useCallback(
@@ -23,8 +32,8 @@ const CreateOrderBlock = () => {
   );
 
   const handleOrder = useCallback(
-    () => (window.location.href = process.env.NEXT_PUBLIC_STRIPE_LINK || ""),
-    []
+    () => (window.location.href = stripeLink),
+    [stripeLink]
   );
 
   return (
@@ -32,21 +41,15 @@ const CreateOrderBlock = () => {
       <div className="relative md:grow max-md:w-full flex flex-col flex-nowrap">
         <div className="relative grow rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-8 xl:pt-12 2xl:pt-14 fullHD:pt-20 pb-5 xl:pb-8 2xl:pb-10 fullHD:pb-12 flex flex-col flex-nowrap">
           <p className="font-extrabold text-base md:text-xl xl:text-3xl fullHD:text-4xl uppercase">
-            mit Rutsche für Kinder
+            {preHeader}
           </p>
           <h1
             className={`font-allenoire text-3xl md:text-4xl xl:text-6xl fullHD:text-7xl mt-2 xl:mt-4 2xl:mt-5 fullHD:mt-7 uppercase font-normal tracking-wider`}
           >
-            Kletterdreieck und Kletterbogen
+            {header}
           </h1>
           <p className="text-base xl:text-2xl fullHD:text-4xl tracking-wider mt-5 xl:mt-7 2xl:mt-9 fullHD:mt-11">
-            Überraschen Sie Ihr Baby mit einer neuen Erfahrung mit dem geraden
-            Balancer von Woodandhearts! Es wird Ihrem Kind helfen,{" "}
-            <span className="font-bold text-orange-600">Korrdination</span> und{" "}
-            <span className="font-bold text-orange-600">
-              Gleichgewichtssinn
-            </span>{" "}
-            zu entwickeln.
+            {description}
           </p>
           <ul className="text-base xl:text-2xl fullHD:text-4xl tracking-wider flex flex-col gap-6 fullHD:gap-10 w-full mt-8 md:mt-10 xl:mt-12 2xl:mt-16 fullHD:mt-20">
             {descriptionOptions.map((option, index) => (
@@ -81,11 +84,11 @@ const CreateOrderBlock = () => {
         <div className="relative grow flex max-sm:flex-col gap-2 justify-between items-stretch flex-wrap mt-6 xl:mt-8 2xl:mt-10 fullHD:mt-14 rounded-2xl xl:rounded-3xl fullHD:rounded-15 bg-orange-50 px-5 xl:px-8 2xl:px-10 fullHD:px-12 pt-2 xl:pt-3 2xl:pt-4 fullHD:pt-5 pb-3 xl:pb-5 2xl:pb-6 fullHD:pb-8">
           <div className="relative flex flex-row max-sm:w-fit flex-nowrap max-sm:flex-wrap gap-2 fullHD:gap-3">
             <h3 className="whitespace-nowrap font-allenoire flex-auto text-4xl xl:text-5xl fullHD:text-6xl leading-10 text-black tracking-[4px] self-end">
-              {`€${formatNumber(89 * quantity)}`}
+              {`€${formatNumber(finalPrice * quantity)}`}
             </h3>
             <div className="relative flex flex-col self-start items-end py-2 xl:py-3 fullHD:py-4">
               <p className="font-extrabold text-xl xl:text-2xl fullHD:text-3xl tracking-wider leading-x-tight text-orange-600 line-through">
-                &nbsp;€{formatNumber(159 * quantity)}&nbsp;
+                &nbsp;€{formatNumber(price * quantity)}&nbsp;
               </p>
               <p className="font-extrabold text-base xl:text-xl fullHD:text-2xl tracking-wider leading-tight xl:leading-x-tight fullHD:leading-x-tight text-orange-600">
                 SAVE 45%

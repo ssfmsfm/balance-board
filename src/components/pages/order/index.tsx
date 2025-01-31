@@ -4,8 +4,13 @@ import NavBtn from "@/components/commonComponents/navigationBtn/NavBtn";
 import Reviews from "./reviews/Reviews";
 import Main from "./main/Main";
 import { myFont } from "../home";
+import { IProductData } from "@/constants/interfaces";
 
-const Order = () => {
+type Props = {
+  productData: IProductData;
+};
+
+const Order: React.FC<Props> = ({ productData }) => {
   return (
     <div className={`${myFont.variable} 4k:flex 4k:justify-center`}>
       <div className={"flex flex-col max-w-[2560px]"}>
@@ -34,7 +39,7 @@ const Order = () => {
           />
         </header>
         <main className="px-4 md:px-8 xl:px-12 fullHD:px-16 overflow-hidden">
-          <Main />
+          <Main productData={productData} />
           <Reviews />
         </main>
         <Footer />

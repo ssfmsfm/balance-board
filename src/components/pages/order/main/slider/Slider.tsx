@@ -1,50 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import React, { useCallback, useMemo, useRef, useState } from "react";
+import React, { useMemo } from "react";
 import ImageGalleryLib from "react-image-gallery";
-// import NavIcon from '../../../../../assets/icons/pagination-btn.svg?react';
-// import MainNavIcon from '../../../../../assets/icons/arrow-right.svg?react';
 
-const imagesList: Array<{ src: string }> = [
-  {
-    src: "/slider/slide-1.webp",
-  },
-  {
-    src: "/slider/slide-2.webp",
-  },
-  {
-    src: "/slider/slide-3.webp",
-  },
-  {
-    src: "/slider/slide-4.webp",
-  },
-  {
-    src: "/slider/slide-5.webp",
-  },
-  {
-    src: "/slider/slide-6.webp",
-  },
-];
+type Props = {
+  imagesSrc: Array<string>;
+};
 
-const Slider = () => {
+const Slider: React.FC<Props> = ({ imagesSrc }) => {
   // images
   const images = useMemo(
     () =>
-      imagesList.map((el) => ({
-        original: el.src,
-        thumbnail: el.src,
+      imagesSrc.map((src) => ({
+        original: src,
+        thumbnail: src,
         renderItem: ({ thumbnail }: any) => (
           <div className="relative w-full aspect-[0.876] rounded-2xl xl:rounded-3xl fullHD:rounded-13 overflow-hidden">
-            <img
+            <Image
               alt=""
+              width={600}
+              height={680}
               className="max-w-auto w-full h-full object-cover"
               src={thumbnail}
             />
           </div>
         ),
       })),
-    []
+    [imagesSrc]
   );
 
   return (

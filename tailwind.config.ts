@@ -40,6 +40,9 @@ const config: Config = {
       lineHeight: {
         "x-tight": "110% !important",
       },
+      aspectRatio: {
+        "5/6": "5 / 6",
+      },
     },
   },
   plugins: [],

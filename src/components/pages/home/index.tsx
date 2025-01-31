@@ -290,6 +290,61 @@ const HomePage = () => (
             </div>
           </div>
         </section>
+
+        <section
+          id="to-order"
+          className="flex flex-col items-center p-5 xl:p-10 lg:p-14 fullHD:p-20 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16"
+        >
+          <h2 className="font-black text-center text-4xl md:text-5xl xl:text-6xl fullHD:text-8xl lg:max-w-[70%]">
+            Sehen Sie sich unsere anderen Produkte an
+          </h2>
+          <div className="flex items-stretch gap-10 lg:gap-16 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:max-w-full">
+            <div className="shrink max-md:basis-full basis-1/2 md:grow-0 flex flex-col flex-nowrap rounded-xl lg:rounded-2xl fullHD:rounded-3xl overflow-hidden bg-orange-100">
+              <div className="relative w-full aspect-[5/6] overflow-hidden">
+                <Image
+                  className="w-full h-full object-cover transition-transform ease-linear duration-150 hover:scale-105"
+                  src="/slider/small-board/1.webp"
+                  alt="small board"
+                  width={600}
+                  height={680}
+                />
+              </div>
+              <div className="relative w-full flex flex-col items-center gap-4 lg:gap-8 fullHD:gap-12 p-4 lg:p-8 fullHD:p-12 grow">
+                <h4 className=" text-center font-bold text-2xl xl:text-3xl lg:text-4xl fullHD:text-5xl text-orange-950">
+                  Balance Board für Kinder
+                </h4>
+                <Link
+                  href="/small-board"
+                  className="font-bold text-orange-100 bg-orange-600 mt-auto lg:max-w-[70%] rounded-lg lg:rounded-xl fullHD:rounded-2xl px-6 fullHD:px-9 py-3 fullHD:py-5"
+                >
+                  <button className="uppercase">zeigen</button>
+                </Link>
+              </div>
+            </div>
+            <div className="shrink max-md:basis-full basis-1/2 md:grow-0 flex flex-col flex-nowrap rounded-xl lg:rounded-2xl fullHD:rounded-3xl overflow-hidden bg-orange-100">
+              <div className="relative w-full aspect-[5/6] overflow-hidden">
+                <Image
+                  className="w-full h-full object-cover transition-transform ease-linear duration-150 hover:scale-105"
+                  src="/slider/ramp/1.webp"
+                  alt="ramp"
+                  width={600}
+                  height={680}
+                />
+              </div>
+              <div className="relative w-full flex flex-col items-center gap-4 lg:gap-8 fullHD:gap-12 p-4 lg:p-8 fullHD:p-12 grow">
+                <h4 className=" text-center font-bold text-2xl xl:text-3xl lg:text-4xl fullHD:text-5xl text-orange-950">
+                  Rampe Birke für Kinder
+                </h4>
+                <Link
+                  href="/ramp"
+                  className="font-bold text-orange-100 bg-orange-600 mt-auto lg:max-w-[70%] rounded-lg lg:rounded-xl fullHD:rounded-2xl px-6 fullHD:px-9 py-3 fullHD:py-5"
+                >
+                  <button className="uppercase">zeigen</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

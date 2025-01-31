@@ -10,7 +10,9 @@ const OrderModal: React.FC<PropsType> = ({ onClose }) => {
   const [showPaypalData, setShowPaypalData] = useState(false);
 
   const handlePayByCard = useCallback(
-    () => (window.location.href = process.env.NEXT_PUBLIC_STRIPE_LINK || ""),
+    () =>
+      (window.location.href =
+        process.env.NEXT_PUBLIC_BALANCE_BOARD_STRIPE_LINK || ""),
     []
   );
 
