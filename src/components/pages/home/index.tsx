@@ -15,14 +15,14 @@ const otherProducts = [
   {
     header: "Balance Board für Kinder",
     href: "/small-board",
-    image: "/slider/small-board/1.webp",
+    image: "/slider/small-board/4.webp",
     alt: "small board",
     btnId: process.env.NEXT_PUBLIC_GTM_TO_SMALL_BOARD_CART_BTN_ID || "",
   },
   {
     header: "Rampe Birke für Kinder",
     href: "/ramp",
-    image: "/slider/ramp/1.webp",
+    image: "/slider/ramp/4.webp",
     alt: "ramp",
     btnId: process.env.NEXT_PUBLIC_GTM_TO_RAMP_CART_BTN_ID || "",
   },
@@ -310,18 +310,18 @@ const HomePage = () => (
 
         <section
           id="to-order"
-          className="flex flex-col items-center p-5 xl:p-10 lg:p-14 fullHD:p-20 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16"
+          className="flex flex-col items-center p-5 xl:py-10 xl:px-20 lg:py-14 lg:px-30 fullHD:p-20 rounded-[40px] mt-7 mb-4 mx-4 md:mx-8 xl:mx-16"
         >
           <h2 className="font-black text-center text-4xl md:text-5xl xl:text-6xl fullHD:text-8xl lg:max-w-[70%]">
             Sehen Sie sich unsere anderen Produkte an
           </h2>
-          <div className="flex items-stretch gap-10 lg:gap-16 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-md:max-w-full">
+          <div className="flex items-stretch gap-10 lg:gap-16 mt-10 text-base xl:text-2xl fullHD:text-4xl tracking-widest text-black max-md:flex-wrap max-w-[80%] max-md:max-w-full">
             {otherProducts.map((product) => (
               <div
                 key={product.alt}
                 className="shrink max-md:basis-full basis-1/2 md:grow-0 flex flex-col flex-nowrap rounded-xl lg:rounded-2xl fullHD:rounded-3xl overflow-hidden bg-orange-100"
               >
-                <div className="relative w-full aspect-[5/6] overflow-hidden">
+                <div className="relative w-full aspect-[1] overflow-hidden">
                   <Image
                     className="w-full h-full object-cover transition-transform ease-linear duration-150 hover:scale-105"
                     src={product.image}
